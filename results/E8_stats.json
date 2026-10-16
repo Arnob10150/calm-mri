@@ -1,0 +1,68 @@
+{
+ "final_vs_baselines": {
+  "efficientnet_b0": {
+   "p_raw": 6.103515625e-05,
+   "p_holm": 0.0003662109375,
+   "significant_at_05": true,
+   "mean_diff": 0.05820529770726491,
+   "n_pairs": 15,
+   "wins_folds": 15
+  },
+  "resnet18": {
+   "p_raw": 0.0006533107814151377,
+   "p_holm": 0.003250121193590314,
+   "significant_at_05": true,
+   "mean_diff": 0.04068973973493695,
+   "n_pairs": 15,
+   "wins_folds": 15
+  },
+  "mobilenetv3_small": {
+   "p_raw": 0.0006500242387180628,
+   "p_holm": 0.003250121193590314,
+   "significant_at_05": true,
+   "mean_diff": 0.04253821521358225,
+   "n_pairs": 15,
+   "wins_folds": 15
+  },
+  "convnext_tiny": {
+   "p_raw": 0.002078847936935441,
+   "p_holm": 0.004157695873870882,
+   "significant_at_05": true,
+   "mean_diff": 0.009902369503175572,
+   "n_pairs": 15,
+   "wins_folds": 12
+  },
+  "deit_small": {
+   "p_raw": 0.0028648155524898344,
+   "p_holm": 0.004157695873870882,
+   "significant_at_05": true,
+   "mean_diff": 0.014688822783055595,
+   "n_pairs": 15,
+   "wins_folds": 13
+  },
+  "swin_tiny": {
+   "p_raw": 0.0013230752014215497,
+   "p_holm": 0.0039692256042646494,
+   "significant_at_05": true,
+   "mean_diff": 0.014907576226067738,
+   "n_pairs": 15,
+   "wins_folds": 14
+  }
+ },
+ "leakage": {
+  "per_model_mean_delta": {
+   "efficientnet_b0": 0.05417754569190599,
+   "resnet18": 0.032419495213228844,
+   "mobilenetv3_small": 0.04460400348128809,
+   "convnext_tiny": 0.03600957354221057,
+   "deit_small": 0.033507397737162714,
+   "swin_tiny": 0.03448651000870321
+  },
+  "pooled_mean_delta": 0.03920075427908323,
+  "pooled_sd": 0.009742937342954566,
+  "pooled_p_wilcoxon": 0.00019575042504300203,
+  "n_pairs": 18,
+  "n_architectures": 6,
+  "all_models_inflated": true
+ }
+}

@@ -1,0 +1,161 @@
+{
+ "classes": [
+  "glioma",
+  "meningioma",
+  "pituitary"
+ ],
+ "cohorts": {
+  "cheng": {
+   "n": 3064,
+   "per_class": {
+    "glioma": 1426,
+    "pituitary": 930,
+    "meningioma": 708
+   },
+   "n_patients": 233,
+   "slices_per_patient_mean": 13.150214592274677,
+   "slices_per_patient_median": 13.0,
+   "slices_per_patient_min": 1,
+   "slices_per_patient_max": 38,
+   "patients_per_class": {
+    "glioma": 89,
+    "meningioma": 82,
+    "pituitary": 62
+   },
+   "contaminated_by_hemg": 0,
+   "clean_wrt_hemg": 3064,
+   "contaminated_by_pmram": 0,
+   "clean_wrt_pmram": 3064,
+   "contaminated_by_sartaj": 0,
+   "clean_wrt_sartaj": 3064
+  },
+  "hemg": {
+   "n": 5023,
+   "per_class": {
+    "pituitary": 1757,
+    "meningioma": 1645,
+    "glioma": 1621
+   },
+   "contaminated_by_cheng": 0,
+   "clean_wrt_cheng": 5023,
+   "contaminated_by_pmram": 604,
+   "clean_wrt_pmram": 4419,
+   "contaminated_by_sartaj": 1960,
+   "clean_wrt_sartaj": 3063
+  },
+  "pmram": {
+   "n": 1109,
+   "per_class": {
+    "glioma": 373,
+    "pituitary": 373,
+    "meningioma": 363
+   },
+   "contaminated_by_cheng": 0,
+   "clean_wrt_cheng": 1109,
+   "contaminated_by_hemg": 584,
+   "clean_wrt_hemg": 525,
+   "contaminated_by_sartaj": 244,
+   "clean_wrt_sartaj": 865
+  },
+  "sartaj": {
+   "n": 2764,
+   "per_class": {
+    "meningioma": 937,
+    "glioma": 926,
+    "pituitary": 901
+   },
+   "contaminated_by_cheng": 0,
+   "clean_wrt_cheng": 2764,
+   "contaminated_by_hemg": 1995,
+   "clean_wrt_hemg": 769,
+   "contaminated_by_pmram": 267,
+   "clean_wrt_pmram": 2497
+  }
+ },
+ "verification": {
+  "method": "dHash(64-bit) Hamming<=3, then Pearson r>=0.95 at 96x96",
+  "corr_threshold": 0.95
+ },
+ "within_cohort": {
+  "cheng": {
+   "exact_duplicate_files": 0,
+   "near_duplicate_candidates": 420,
+   "near_duplicate_pairs": 14,
+   "near_duplicate_pairs_cross_patient": 0
+  },
+  "hemg": {
+   "exact_duplicate_files": 132,
+   "near_duplicate_candidates": 1476,
+   "near_duplicate_pairs": 238,
+   "near_duplicate_pairs_cross_patient": 0
+  },
+  "pmram": {
+   "exact_duplicate_files": 40,
+   "near_duplicate_candidates": 118,
+   "near_duplicate_pairs": 66,
+   "near_duplicate_pairs_cross_patient": 0
+  },
+  "sartaj": {
+   "exact_duplicate_files": 221,
+   "near_duplicate_candidates": 777,
+   "near_duplicate_pairs": 370,
+   "near_duplicate_pairs_cross_patient": 0
+  }
+ },
+ "cross_cohort": {
+  "cheng|hemg": {
+   "candidate_pairs": 0,
+   "near_pairs": 0,
+   "exact_shared_files": 0,
+   "cheng_slices_matched": 0,
+   "hemg_slices_matched": 0,
+   "cheng_pct": 0.0,
+   "hemg_pct": 0.0
+  },
+  "cheng|pmram": {
+   "candidate_pairs": 0,
+   "near_pairs": 0,
+   "exact_shared_files": 0,
+   "cheng_slices_matched": 0,
+   "pmram_slices_matched": 0,
+   "cheng_pct": 0.0,
+   "pmram_pct": 0.0
+  },
+  "cheng|sartaj": {
+   "candidate_pairs": 0,
+   "near_pairs": 0,
+   "exact_shared_files": 0,
+   "cheng_slices_matched": 0,
+   "sartaj_slices_matched": 0,
+   "cheng_pct": 0.0,
+   "sartaj_pct": 0.0
+  },
+  "hemg|pmram": {
+   "candidate_pairs": 969,
+   "near_pairs": 612,
+   "exact_shared_files": 2,
+   "hemg_slices_matched": 604,
+   "pmram_slices_matched": 584,
+   "hemg_pct": 12.02468644236512,
+   "pmram_pct": 52.660054102795314
+  },
+  "hemg|sartaj": {
+   "candidate_pairs": 3520,
+   "near_pairs": 2435,
+   "exact_shared_files": 1827,
+   "hemg_slices_matched": 1960,
+   "sartaj_slices_matched": 1995,
+   "hemg_pct": 39.02050567390006,
+   "sartaj_pct": 72.17800289435601
+  },
+  "pmram|sartaj": {
+   "candidate_pairs": 467,
+   "near_pairs": 271,
+   "exact_shared_files": 0,
+   "pmram_slices_matched": 244,
+   "sartaj_slices_matched": 267,
+   "pmram_pct": 22.00180342651037,
+   "sartaj_pct": 9.659913169319827
+  }
+ }
+}

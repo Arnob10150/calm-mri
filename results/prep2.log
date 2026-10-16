@@ -1,0 +1,15 @@
+  cheng: 3064 images
+sartaj...
+  sartaj: 2764 images
+hemg...
+  hemg parquet columns: ['image', 'label'], rows 7023
+  hemg: 0 images
+
+wrote manifest_all.csv: 5828 rows
+cohort  label     
+cheng   glioma        1426
+        meningioma     708
+        pituitary      930
+sartaj  glioma         926
+        meningioma     937
+        pituitary      901

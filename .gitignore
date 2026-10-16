@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+*.so
+.Python
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Image cohorts are public and must be downloaded with scripts/dl_par.sh.
+# They are ~3 GB and are deliberately not tracked here.
+data/
+*.h5
+*.mat
+
+# Model weights (regenerate with scripts/run_experiments.py)
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

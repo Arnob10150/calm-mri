@@ -1,0 +1,54 @@
+{
+ "final": {
+  "10": {
+   "mean_accuracy": 0.7063621533442088,
+   "sd_accuracy": 0.1458459695704577,
+   "mean_macro_f1": 0.7053914867976564,
+   "n_patients": 19
+  },
+  "25": {
+   "mean_accuracy": 0.8640565524741707,
+   "sd_accuracy": 0.046409109936600045,
+   "mean_macro_f1": 0.839205788306335,
+   "n_patients": 46
+  },
+  "50": {
+   "mean_accuracy": 0.9168026101141925,
+   "sd_accuracy": 0.024141351691596605,
+   "mean_macro_f1": 0.9000532026596506,
+   "n_patients": 93
+  },
+  "100": {
+   "mean_accuracy": 0.9412724306688417,
+   "sd_accuracy": 0.008156606851549786,
+   "mean_macro_f1": 0.9328311317140546,
+   "n_patients": 186
+  }
+ },
+ "convnext_tiny": {
+  "10": {
+   "mean_accuracy": 0.8564437194127242,
+   "sd_accuracy": 0.011419249592169651,
+   "mean_macro_f1": 0.8425632412364178,
+   "n_patients": 19
+  },
+  "25": {
+   "mean_accuracy": 0.897226753670473,
+   "sd_accuracy": 0.027732463295269183,
+   "mean_macro_f1": 0.8799208073083743,
+   "n_patients": 46
+  },
+  "50": {
+   "mean_accuracy": 0.9282218597063622,
+   "sd_accuracy": 0.0165561036950933,
+   "mean_macro_f1": 0.917907335329414,
+   "n_patients": 93
+  },
+  "100": {
+   "mean_accuracy": 0.9320282762370854,
+   "sd_accuracy": 0.004105402085519696,
+   "mean_macro_f1": 0.9233902783033439,
+   "n_patients": 186
+  }
+ }
+}

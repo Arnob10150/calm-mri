@@ -1,0 +1,8 @@
+scripts/run_chain8.sh: line 7:  7894 Segmentation fault      "${@:2}" >> results/run_bench.log 2>&1
+scripts/run_chain8.sh: line 7: 10062 Segmentation fault      "${@:2}" >> results/run_bench.log 2>&1
+Thread failed to start.
+scripts/run_chain8.sh: line 7: 10111 Segmentation fault      "${@:2}" >> results/run_bench.log 2>&1
+      0 [main] bash 7881 dofork: child -1 - forked process 36516 died unexpectedly, retry 0, exit code 0xC000026B, errno 11
+scripts/run_chain8.sh: fork: retry: Resource temporarily unavailable
+1156904 [main] bash 7881 dofork: child -1 - forked process 37004 died unexpectedly, retry 0, exit code 0xC000026B, errno 11
+scripts/run_chain8.sh: fork: retry: Resource temporarily unavailable

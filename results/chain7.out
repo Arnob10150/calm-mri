@@ -1,0 +1,2 @@
+scripts/run_chain7.sh: line 6:  7212 Segmentation fault      "${@:2}" >> results/run_bench.log 2>&1
+scripts/run_chain7.sh: line 6:  7266 Segmentation fault      "${@:2}" >> results/run_bench.log 2>&1

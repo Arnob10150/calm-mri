@@ -1,0 +1,25 @@
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E0 cohort + duplicate audit
+  cheng: 3064 slices, 233 patients
+  hemg: 5023 slices
+  pmram: 1109 slices
+  sartaj: 2764 slices
+  hashing...
+    cheng hashed
+    hemg hashed
+    pmram hashed
+    sartaj hashed
+    cheng: 0 exact, 420 candidates -> 14 confirmed (0 cross-patient)
+    hemg: 132 exact, 1476 candidates -> 238 confirmed (0 cross-patient)
+    pmram: 40 exact, 118 candidates -> 66 confirmed (0 cross-patient)
+    sartaj: 221 exact, 777 candidates -> 370 confirmed (0 cross-patient)
+    cheng vs hemg: 0 candidates -> 0 confirmed; 0.0% of hemg, 0.0% of cheng
+    cheng vs pmram: 0 candidates -> 0 confirmed; 0.0% of pmram, 0.0% of cheng
+    cheng vs sartaj: 0 candidates -> 0 confirmed; 0.0% of sartaj, 0.0% of cheng
+    hemg vs pmram: 969 candidates -> 612 confirmed; 52.7% of pmram, 12.0% of hemg
+    hemg vs sartaj: 3520 candidates -> 2435 confirmed; 72.2% of sartaj, 39.0% of hemg
+    pmram vs sartaj: 467 candidates -> 271 confirmed; 9.7% of sartaj, 22.0% of pmram
+  wrote results/E0_audit.json
+[audit] done in 1.1 min
+

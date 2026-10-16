@@ -1,0 +1,43 @@
+{
+  "_note": "Accuracies as reported in the three accepted AJSE brain-tumour papers, transcribed from their result tables. Different cohorts, class sets and (slice-level) splits from this study; used only for the comparative-analysis tables.",
+  "studies": {
+    "sutradhar2021": {
+      "short": "Sutradhar et al. (2021)",
+      "dataset": "Kaggle Brain Tumor Classification (MRI), 3,264 images",
+      "classes": 4,
+      "split": "80/20, image-level",
+      "best_model": "EfficientNet-B3",
+      "best_accuracy": 98.16,
+      "calibration": false, "deferral": false, "external": false, "xai": false,
+      "source": "AJSE 20(3), 2021, abstract"
+    },
+    "hasan2025": {
+      "short": "Hasan et al. (2025)",
+      "dataset": "Kaggle Brain Tumor MRI Dataset, 7,023 images",
+      "classes": 4,
+      "split": "70/10/20, image-level stratified",
+      "best_model": "ViT-ResFusion (+Real-ESRGAN)",
+      "best_accuracy": 99.85,
+      "calibration": false, "deferral": false, "external": false, "xai": "LIME",
+      "source": "AJSE 24(1), 2025, Tables I-II",
+      "models_raw": {"swin_tiny": 95.67, "deit_small": 94.96, "resnet50": 96.51,
+                     "efficientnet_b0": 92.24, "vgg16": 93.80, "densenet121": 96.32},
+      "models_esrgan": {"swin_tiny": 99.76, "deit_small": 99.69, "resnet50": 99.31,
+                        "efficientnet_b0": 95.42, "vgg16": 99.08, "densenet121": 99.24}
+    },
+    "tawhid2026": {
+      "short": "Tawhid et al. (2026)",
+      "dataset": "PMRAM (Kaggle copy), 2,705 curated images",
+      "classes": 4,
+      "split": "5-fold stratified, image-level",
+      "best_model": "Xception (+GAN)",
+      "best_accuracy": 97.62,
+      "best_ece": 0.0148,
+      "external_zero_shot_accuracy": 78.4,
+      "calibration": "ECE", "deferral": false, "external": "Figshare, zero-shot", "xai": "Grad-CAM++, Score-CAM, SHAP, LIME",
+      "source": "AJSE 24(3), 2026, Tables I and VIII",
+      "models": {"xception": 97.62, "convnext_tiny": 97.54, "mobilenetv2": 96.83,
+                 "inception_v3": 96.41}
+    }
+  }
+}

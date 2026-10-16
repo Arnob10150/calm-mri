@@ -1,0 +1,246 @@
+    cached 2000/3064
+Stage A: calm_l, split seed 0, single model
+C:\Python313\Lib\site-packages\torch\nn\modules\module.py:1341: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:28.)
+  return t.to(
+CANDIDATE calm_l/base: inner acc 0.9625 nll 0.1405 | (test, not used) acc 0.9308 ece 0.0333  [11.8 min]
+CANDIDATE calm_l/ema_tta: inner acc 0.9543 nll 0.1589 | (test, not used) acc 0.9194 ece 0.0313  [12.1 min]
+CANDIDATE calm_l/mix_ema_tta: inner acc 0.9658 nll 0.1537 | (test, not used) acc 0.9321 ece 0.0311  [16.8 min]
+CANDIDATE calm_l/ls10_ema_tta: inner acc 0.9670 nll 0.1601 | (test, not used) acc 0.9311 ece 0.0316  [16.3 min]
+CANDIDATE calm_l/lr2_ema_tta: inner acc 0.9565 nll 0.1506 | (test, not used) acc 0.9246 ece 0.0312  [17.0 min]
+SELECT calm_l/ls10_ema_tta (by inner validation only)
+Stage B: calm_l/ls10_ema_tta, 3 members x 3 split seeds
+  split seed 0: single acc 0.9311 | ensemble acc 0.9399 ece 0.0283
+  split seed 1: single acc 0.9442 | ensemble acc 0.9468 ece 0.0094
+  missing fold files for seed 2 fold 0; stopping
+wrote results/E8_stats.json
+  CALM-MRI vs efficientnet_b0    +4.49 pts  p_holm 0.0033  *
+  CALM-MRI vs resnet18           +2.74 pts  p_holm 0.0033  *
+  CALM-MRI vs mobilenetv3_small  +2.93 pts  p_holm 0.0011  *
+  CALM-MRI vs convnext_tiny      -0.34 pts  p_holm 1.0000  
+  CALM-MRI vs deit_small         +0.14 pts  p_holm 1.0000  
+  CALM-MRI vs swin_tiny          +0.16 pts  p_holm 1.0000  
+  leakage: +3.92 pts over 6 architectures, p=2.0e-04
+STAGE abl started 18:55
+    cached 2000/3064
+Stage A: calm_l, split seed 0, single model
+CANDIDATE calm_l/base: inner acc 0.9625 nll 0.1405 | (test, not used) acc 0.9308 ece 0.0333  [0.0 min]
+CANDIDATE calm_l/ema_tta: inner acc 0.9543 nll 0.1589 | (test, not used) acc 0.9194 ece 0.0313  [0.0 min]
+CANDIDATE calm_l/mix_ema_tta: inner acc 0.9658 nll 0.1537 | (test, not used) acc 0.9321 ece 0.0311  [0.0 min]
+CANDIDATE calm_l/ls10_ema_tta: inner acc 0.9670 nll 0.1601 | (test, not used) acc 0.9311 ece 0.0316  [0.0 min]
+CANDIDATE calm_l/lr2_ema_tta: inner acc 0.9565 nll 0.1506 | (test, not used) acc 0.9246 ece 0.0312  [0.0 min]
+SELECT calm_l/ls10_ema_tta (by inner validation only)
+Stage B: calm_l/ls10_ema_tta, 3 members x 3 split seeds
+  split seed 0: single acc 0.9311 | ensemble acc 0.9399 ece 0.0283
+  split seed 1: single acc 0.9442 | ensemble acc 0.9468 ece 0.0094
+C:\Python313\Lib\site-packages\torch\nn\modules\module.py:1341: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:28.)
+  return t.to(
+  missing fold files for seed 2 fold 1; stopping
+wrote results/E8_stats.json
+  CALM-MRI vs efficientnet_b0    +4.49 pts  p_holm 0.0033  *
+  CALM-MRI vs resnet18           +2.74 pts  p_holm 0.0033  *
+  CALM-MRI vs mobilenetv3_small  +2.93 pts  p_holm 0.0011  *
+  CALM-MRI vs convnext_tiny      -0.34 pts  p_holm 1.0000  
+  CALM-MRI vs deit_small         +0.14 pts  p_holm 1.0000  
+  CALM-MRI vs swin_tiny          +0.16 pts  p_holm 1.0000  
+  leakage: +3.92 pts over 6 architectures, p=2.0e-04
+STAGE abl started 19:06
+STAGE abl FAILED
+STAGE ood started 19:07
+RETRY tune attempt 1 (7/15 seed-2 files)
+    cached 2000/3064
+Stage A: calm_l, split seed 0, single model
+CANDIDATE calm_l/base: inner acc 0.9625 nll 0.1405 | (test, not used) acc 0.9308 ece 0.0333  [0.0 min]
+CANDIDATE calm_l/ema_tta: inner acc 0.9543 nll 0.1589 | (test, not used) acc 0.9194 ece 0.0313  [0.0 min]
+CANDIDATE calm_l/mix_ema_tta: inner acc 0.9658 nll 0.1537 | (test, not used) acc 0.9321 ece 0.0311  [0.0 min]
+CANDIDATE calm_l/ls10_ema_tta: inner acc 0.9670 nll 0.1601 | (test, not used) acc 0.9311 ece 0.0316  [0.0 min]
+CANDIDATE calm_l/lr2_ema_tta: inner acc 0.9565 nll 0.1506 | (test, not used) acc 0.9246 ece 0.0312  [0.0 min]
+SELECT calm_l/ls10_ema_tta (by inner validation only)
+Stage B: calm_l/ls10_ema_tta, 3 members x 3 split seeds
+  split seed 0: single acc 0.9311 | ensemble acc 0.9399 ece 0.0283
+  split seed 1: single acc 0.9442 | ensemble acc 0.9468 ece 0.0094
+RETRY tune attempt 2 (8/15 seed-2 files)
+    cached 2000/3064
+Stage A: calm_l, split seed 0, single model
+CANDIDATE calm_l/base: inner acc 0.9625 nll 0.1405 | (test, not used) acc 0.9308 ece 0.0333  [0.0 min]
+CANDIDATE calm_l/ema_tta: inner acc 0.9543 nll 0.1589 | (test, not used) acc 0.9194 ece 0.0313  [0.0 min]
+CANDIDATE calm_l/mix_ema_tta: inner acc 0.9658 nll 0.1537 | (test, not used) acc 0.9321 ece 0.0311  [0.0 min]
+CANDIDATE calm_l/ls10_ema_tta: inner acc 0.9670 nll 0.1601 | (test, not used) acc 0.9311 ece 0.0316  [0.0 min]
+CANDIDATE calm_l/lr2_ema_tta: inner acc 0.9565 nll 0.1506 | (test, not used) acc 0.9246 ece 0.0312  [0.0 min]
+SELECT calm_l/ls10_ema_tta (by inner validation only)
+Stage B: calm_l/ls10_ema_tta, 3 members x 3 split seeds
+  split seed 0: single acc 0.9311 | ensemble acc 0.9399 ece 0.0283
+  split seed 1: single acc 0.9442 | ensemble acc 0.9468 ece 0.0094
+Traceback (most recent call last):
+  File "F:\Yash_AJSE\work\scripts\tune.py", line 173, in <module>
+    main()
+    ~~~~^^
+  File "F:\Yash_AJSE\work\scripts\tune.py", line 156, in main
+    re_, pe, y = evaluate(a.base, win, RECIPES[win], ch, s, a.members)
+                 ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Yash_AJSE\work\scripts\tune.py", line 80, in evaluate
+    rs = [run_member(base, rname, rec, ch, split_seed, m, k, tr, te) for m in range(members)]
+          ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Yash_AJSE\work\scripts\tune.py", line 62, in run_member
+    model, _ = T.train_one(base, ch.iloc[tr2], None, N_CLS, seed=init, device=DEV, **kw)
+               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Yash_AJSE\work\src\train.py", line 164, in train_one
+    z = model(x)
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "F:\Yash_AJSE\work\src\models.py", line 85, in forward
+    logits, w = self.head(feats)
+                ~~~~~~~~~^^^^^^^
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "F:\Yash_AJSE\work\src\models.py", line 54, in forward
+    w = torch.softmax(self.gate(torch.cat(pooled, dim=1)), dim=1)      # (B, S)
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+RETRY tune attempt 3 (8/15 seed-2 files)
+    cached 2000/3064
+WAITING for GPU (other job running) 19:14
+RETRY tune attempt 1 (8/15 seed-2 files)
+Traceback (most recent call last):
+  File "F:\Yash_AJSE\work\scripts\tune.py", line 25, in <module>
+    import torch
+  File "C:\Python313\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Python313\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.
+WAITING for GPU (other job running) 19:14
+RETRY tune attempt 2 (8/15 seed-2 files)
+    cached 2000/3064
+Stage A: calm_l, split seed 0, single model
+CANDIDATE calm_l/base: inner acc 0.9625 nll 0.1405 | (test, not used) acc 0.9308 ece 0.0333  [0.0 min]
+CANDIDATE calm_l/ema_tta: inner acc 0.9543 nll 0.1589 | (test, not used) acc 0.9194 ece 0.0313  [0.0 min]
+CANDIDATE calm_l/mix_ema_tta: inner acc 0.9658 nll 0.1537 | (test, not used) acc 0.9321 ece 0.0311  [0.0 min]
+CANDIDATE calm_l/ls10_ema_tta: inner acc 0.9670 nll 0.1601 | (test, not used) acc 0.9311 ece 0.0316  [0.0 min]
+CANDIDATE calm_l/lr2_ema_tta: inner acc 0.9565 nll 0.1506 | (test, not used) acc 0.9246 ece 0.0312  [0.0 min]
+SELECT calm_l/ls10_ema_tta (by inner validation only)
+Stage B: calm_l/ls10_ema_tta, 3 members x 3 split seeds
+  split seed 0: single acc 0.9311 | ensemble acc 0.9399 ece 0.0283
+  split seed 1: single acc 0.9442 | ensemble acc 0.9468 ece 0.0094
+  split seed 2: single acc 0.9377 | ensemble acc 0.9439 ece 0.0192
+FINAL single calm_l/ls10_ema_tta: acc 0.9377 f1 0.9300 auroc 0.9866 ece 0.0199 brier 0.0957 nll 0.1962 aurc 0.0181 acc90 0.9730
+    acc    ours 0.9377 vs best baseline convnext_tiny      0.9391  behind
+    f1     ours 0.9300 vs best baseline convnext_tiny      0.9313  behind
+    auroc  ours 0.9866 vs best baseline calm_l             0.9857  WIN
+    ece    ours 0.0199 vs best baseline resnet18           0.0156  behind
+    brier  ours 0.0957 vs best baseline convnext_tiny      0.0999  WIN
+    nll    ours 0.1962 vs best baseline convnext_tiny      0.2090  WIN
+    aurc   ours 0.0181 vs best baseline calm_l             0.0175  behind
+    acc90  ours 0.9730 vs best baseline convnext_tiny      0.9710  WIN
+BEATS calm_l/ls10_ema_tta (single): 4/8 metrics
+FINAL ensemble x3: acc 0.9435 f1 0.9360 auroc 0.9861 ece 0.0190 brier 0.0899 nll 0.1870 aurc 0.0199 acc90 0.9749
+    acc    ours 0.9435 vs best baseline convnext_tiny      0.9391  WIN
+    f1     ours 0.9360 vs best baseline convnext_tiny      0.9313  WIN
+    auroc  ours 0.9861 vs best baseline calm_l             0.9857  WIN
+    ece    ours 0.0190 vs best baseline resnet18           0.0156  behind
+    brier  ours 0.0899 vs best baseline convnext_tiny      0.0999  WIN
+    nll    ours 0.1870 vs best baseline convnext_tiny      0.2090  WIN
+    aurc   ours 0.0199 vs best baseline calm_l             0.0175  behind
+    acc90  ours 0.9749 vs best baseline convnext_tiny      0.9710  WIN
+BEATS calm_l/ls10_ema_tta (ensemble x3): 6/8 metrics
+CALM-MRI final ({'source': 'tune', 'base': 'calm_l', 'recipe': 'ls10_ema_tta', 'members': 3}): acc 0.9435 f1 0.9360 auroc 0.9862 ece_cal 0.0190 ece_raw 0.0461 aurc 0.0199
+wrote results/E8_stats.json
+  CALM-MRI vs efficientnet_b0    +5.28 pts  p_holm 0.0039  *
+  CALM-MRI vs resnet18           +3.53 pts  p_holm 0.0039  *
+  CALM-MRI vs mobilenetv3_small  +3.71 pts  p_holm 0.0039  *
+  CALM-MRI vs convnext_tiny      +0.45 pts  p_holm 0.0595  
+  CALM-MRI vs deit_small         +0.92 pts  p_holm 0.0286  *
+  CALM-MRI vs swin_tiny          +0.95 pts  p_holm 0.0068  *
+  leakage: +3.92 pts over 6 architectures, p=2.0e-04
+STAGE abl started 20:05
+STAGE abl FAILED
+STAGE ood started 21:02
+STAGE ood FAILED
+STAGE contam started 21:04
+STAGE concat started 21:46
+STAGE concat FAILED (try 1)
+STAGE concat FAILED (try 2)
+STAGE finalize started 22:05
+  missing fold files for seed 0 fold 1; stopping
+wrote results/E8_stats.json
+  CALM-MRI vs efficientnet_b0    +5.28 pts  p_holm 0.0039  *
+  CALM-MRI vs resnet18           +3.53 pts  p_holm 0.0039  *
+  CALM-MRI vs mobilenetv3_small  +3.71 pts  p_holm 0.0039  *
+  CALM-MRI vs convnext_tiny      +0.45 pts  p_holm 0.0595  
+  CALM-MRI vs deit_small         +0.92 pts  p_holm 0.0286  *
+  CALM-MRI vs swin_tiny          +0.95 pts  p_holm 0.0068  *
+  leakage: +3.92 pts over 6 architectures, p=2.0e-04
+STAGE abl started 22:05
+stopped YOLO 21812
+STAGE concat started 22:09 (try 1)
+STAGE concat FAILED (try 1)
+STAGE concat started 22:39 (try 2)
+CALM-MRI final ({'source': 'tune', 'base': 'calm_l', 'recipe': 'ls10_ema_tta', 'fusion': 'concat', 'members': 3}): acc 0.9490 f1 0.9420 auroc 0.9879 ece_cal 0.0168 ece_raw 0.0482 aurc 0.0167
+wrote results/E8_stats.json
+  CALM-MRI vs efficientnet_b0    +5.82 pts  p_holm 0.0004  *
+  CALM-MRI vs resnet18           +4.07 pts  p_holm 0.0033  *
+  CALM-MRI vs mobilenetv3_small  +4.25 pts  p_holm 0.0033  *
+  CALM-MRI vs convnext_tiny      +0.99 pts  p_holm 0.0042  *
+  CALM-MRI vs deit_small         +1.47 pts  p_holm 0.0042  *
+  CALM-MRI vs swin_tiny          +1.49 pts  p_holm 0.0040  *
+  leakage: +3.92 pts over 6 architectures, p=2.0e-04
+STAGE abl started 23:39 (try 1)
+STAGE abl FAILED (try 1)
+STAGE abl started 23:41 (try 2)
+STAGE abl FAILED (try 2)
+STAGE abl started 23:42 (try 3)
+STAGE abl FAILED (try 3)
+STAGE bench started 00:25 (try 1)
+STAGE bench FAILED (try 1)
+stopped YOLO 27916
+stopped YOLO 25928
+stopped YOLO 15868
+STAGE bench started 00:57 (try 2)
+STAGE bench FAILED (try 2)
+stopped YOLO 31460
+stopped YOLO 30932
+stopped YOLO 21884
+STAGE bench started 00:58 (try 3)
+STAGE bench FAILED (try 3)
+wrote results/E8_stats.json
+  CALM-MRI vs efficientnet_b0    +5.82 pts  p_holm 0.0004  *
+  CALM-MRI vs resnet18           +4.07 pts  p_holm 0.0033  *
+  CALM-MRI vs mobilenetv3_small  +4.25 pts  p_holm 0.0033  *
+  CALM-MRI vs convnext_tiny      +0.99 pts  p_holm 0.0042  *
+  CALM-MRI vs deit_small         +1.47 pts  p_holm 0.0042  *
+  CALM-MRI vs swin_tiny          +1.49 pts  p_holm 0.0040  *
+STAGE ood started 00:59 (try 1)
+STAGE ood FAILED (try 1)
+STAGE abl started 10:58 (try 1)
+STAGE bench started 11:48 (try 1)
+wrote results/E8_stats.json
+  CALM-MRI vs efficientnet_b0    +5.82 pts  p_holm 0.0004  *
+  CALM-MRI vs resnet18           +4.07 pts  p_holm 0.0033  *
+  CALM-MRI vs mobilenetv3_small  +4.25 pts  p_holm 0.0033  *
+  CALM-MRI vs convnext_tiny      +0.99 pts  p_holm 0.0042  *
+  CALM-MRI vs deit_small         +1.47 pts  p_holm 0.0042  *
+  CALM-MRI vs swin_tiny          +1.49 pts  p_holm 0.0040  *
+  leakage: +3.92 pts over 6 architectures, p=2.0e-04
+STAGE ood started 12:43 (try 1)
+STAGE contam started 13:45 (try 1)
+STAGE xai started 14:15 (try 1)
+STAGE dataeff started 14:25 (try 1)
+STAGE eff started 14:55 (try 1)
+wrote results/E8_stats.json
+  CALM-MRI vs efficientnet_b0    +5.82 pts  p_holm 0.0004  *
+  CALM-MRI vs resnet18           +4.07 pts  p_holm 0.0033  *
+  CALM-MRI vs mobilenetv3_small  +4.25 pts  p_holm 0.0033  *
+  CALM-MRI vs convnext_tiny      +0.99 pts  p_holm 0.0042  *
+  CALM-MRI vs deit_small         +1.47 pts  p_holm 0.0042  *
+  CALM-MRI vs swin_tiny          +1.49 pts  p_holm 0.0040  *
+  leakage: +3.92 pts over 6 architectures, p=2.0e-04
+CHAIN COMPLETE 14:56

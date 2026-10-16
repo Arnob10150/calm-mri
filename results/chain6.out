@@ -1,0 +1,8 @@
+Get-CimInstance : Out of memory 
+At line:1 char:1
++ Get-CimInstance Win32_Process -Filter "Name like 'python%'" | ? { $_. ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceBusy: (:) [Get-CimInstance], CimException
+    + FullyQualifiedErrorId : HRESULT 0x80041006,Microsoft.Management.Infrastructure.CimCmdlets.GetCimInstanceCommand
+ 
+scripts/run_chain4.sh: line 11:  5362 Segmentation fault      python -I scripts/run_experiments.py "$st" >> results/run_bench.log 2>&1

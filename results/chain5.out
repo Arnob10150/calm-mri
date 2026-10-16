@@ -1,0 +1,1 @@
+scripts/run_chain5.sh: line 5:  4749 Segmentation fault      python -I scripts/tune.py --base calm_l --members 3 >> results/tune.log 2>&1

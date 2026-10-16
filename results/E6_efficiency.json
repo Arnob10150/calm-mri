@@ -1,0 +1,100 @@
+{
+ "calm": {
+  "params_m": 3.749762,
+  "gflops": 0.364619424,
+  "latency_ms_bs1": 6.3287099202473955,
+  "throughput_img_s_bs32": 872.9449349865498,
+  "peak_mem_mb": 380.752384
+ },
+ "calm_l": {
+  "params_m": 28.252006,
+  "gflops": 4.455197376,
+  "latency_ms_bs1": 4.331771532694499,
+  "throughput_img_s_bs32": 453.04874018791276,
+  "peak_mem_mb": 583.166464
+ },
+ "efficientnet_b0": {
+  "params_m": 4.011391,
+  "gflops": 0.384602592,
+  "latency_ms_bs1": 5.483933289845784,
+  "throughput_img_s_bs32": 1245.6667566917902,
+  "peak_mem_mb": 563.151872
+ },
+ "resnet18": {
+  "params_m": 11.178051,
+  "gflops": 1.823523328,
+  "latency_ms_bs1": 1.570157210032145,
+  "throughput_img_s_bs32": 1647.334456776683,
+  "peak_mem_mb": 424.787456
+ },
+ "mobilenetv3_small": {
+  "params_m": 1.520931,
+  "gflops": 0.0555152,
+  "latency_ms_bs1": 3.546635309855143,
+  "throughput_img_s_bs32": 3757.516223495092,
+  "peak_mem_mb": 125.416448
+ },
+ "convnext_tiny": {
+  "params_m": 27.822435,
+  "gflops": 4.454803968,
+  "latency_ms_bs1": 4.21982208887736,
+  "throughput_img_s_bs32": 452.4915539885638,
+  "peak_mem_mb": 572.145664
+ },
+ "deit_small": {
+  "params_m": 21.666819,
+  "gflops": 4.240835712,
+  "latency_ms_bs1": 3.714454174041748,
+  "throughput_img_s_bs32": 520.5728182075578,
+  "peak_mem_mb": 238.168576
+ },
+ "swin_tiny": {
+  "params_m": 27.521661,
+  "gflops": 4.371086112,
+  "latency_ms_bs1": 7.867956161499023,
+  "throughput_img_s_bs32": 352.31550700088644,
+  "peak_mem_mb": 630.7072
+ },
+ "resnet50": {
+  "params_m": 23.514179,
+  "gflops": 4.131700736,
+  "latency_ms_bs1": 4.044246673583984,
+  "throughput_img_s_bs32": 571.9987265972829,
+  "peak_mem_mb": 575.040512
+ },
+ "densenet121": {
+  "params_m": 6.956931,
+  "gflops": 2.833367552,
+  "latency_ms_bs1": 11.12420161565145,
+  "throughput_img_s_bs32": 522.4376320275026,
+  "peak_mem_mb": 385.275904
+ },
+ "vgg16": {
+  "params_m": 134.281283,
+  "gflops": 15.52037888,
+  "latency_ms_bs1": 8.898325761159262,
+  "throughput_img_s_bs32": 246.5235096710962,
+  "peak_mem_mb": 1833.575936
+ },
+ "xception": {
+  "params_m": 20.813099,
+  "gflops": 4.597382752,
+  "latency_ms_bs1": 3.486426671346029,
+  "throughput_img_s_bs32": 441.1819089345944,
+  "peak_mem_mb": 1366.483456
+ },
+ "inception_v3": {
+  "params_m": 21.791715,
+  "gflops": 2.835932512,
+  "latency_ms_bs1": 8.303169409434002,
+  "throughput_img_s_bs32": 791.4653797323172,
+  "peak_mem_mb": 366.91456
+ },
+ "mobilenetv2": {
+  "params_m": 2.227715,
+  "gflops": 0.299562112,
+  "latency_ms_bs1": 3.425391515096029,
+  "throughput_img_s_bs32": 1549.282229932981,
+  "peak_mem_mb": 521.731072
+ }
+}

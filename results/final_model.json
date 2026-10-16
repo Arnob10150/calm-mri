@@ -1,0 +1,1 @@
+{"source": "tune", "base": "calm_l", "recipe": "ls10_ema_tta", "fusion": "concat", "members": 3}

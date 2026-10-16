@@ -1,0 +1,1996 @@
+manifest: 5828 slices across 2 cohorts | device cuda
+
+E6 efficiency
+F:\Yash_AJSE\work\scripts\run_experiments.py:315: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:28.)
+  x = torch.randn(1, 3, T.IMG_PX, T.IMG_PX, device=DEV)
+  calm               3.75M  0.36 GFLOPs  5.49 ms  818 img/s
+  efficientnet_b0    4.01M  0.38 GFLOPs  4.92 ms  1251 img/s
+  resnet18           11.18M  1.82 GFLOPs  1.60 ms  1577 img/s
+  mobilenetv3_small  1.52M  0.06 GFLOPs  3.19 ms  4001 img/s
+  convnext_tiny      27.82M  4.45 GFLOPs  3.86 ms  462 img/s
+  deit_small         21.67M  4.24 GFLOPs  3.36 ms  530 img/s
+  swin_tiny          27.52M  4.37 GFLOPs  7.20 ms  359 img/s
+  wrote results/E6_efficiency.json
+[eff] done in 0.1 min
+
+E1 benchmark: models x protocols x seeds
+    cached 2000/3064
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    grouped/calm/s0/f0 87s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    grouped/calm/s0/f1 83s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    grouped/calm/s0/f2 84s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    grouped/calm/s0/f3 85s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    grouped/calm/s0/f4 82s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    grouped/calm/s1/f0 83s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    grouped/calm/s1/f1 85s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    grouped/calm/s1/f2 89s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    grouped/calm/s1/f3 86s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    grouped/calm/s1/f4 86s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    grouped/calm/s2/f0 82s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    grouped/calm/s2/f1 82s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    grouped/calm/s2/f2 83s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    grouped/calm/s2/f3 86s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    grouped/calm/s2/f4 83s
+  grouped  calm               acc 0.9275 f1 0.9173 ece 0.0181 aurc 0.0282
+  wrote results/E1_benchmark.json
+    grouped/efficientnet_b0/s0/f0 86s
+    grouped/efficientnet_b0/s0/f1 83s
+    grouped/efficientnet_b0/s0/f2 84s
+    grouped/efficientnet_b0/s0/f3 112s
+    grouped/efficientnet_b0/s0/f4 87s
+    grouped/efficientnet_b0/s1/f0 85s
+    grouped/efficientnet_b0/s1/f1 103s
+    grouped/efficientnet_b0/s1/f2 115s
+    grouped/efficientnet_b0/s1/f3 86s
+    grouped/efficientnet_b0/s1/f4 120s
+    grouped/efficientnet_b0/s2/f0 113s
+    grouped/efficientnet_b0/s2/f1 113s
+    grouped/efficientnet_b0/s2/f2 116s
+    grouped/efficientnet_b0/s2/f3 105s
+    grouped/efficientnet_b0/s2/f4 83s
+  grouped  efficientnet_b0    acc 0.8908 f1 0.8758 ece 0.0168 aurc 0.0365
+  wrote results/E1_benchmark.json
+    grouped/resnet18/s0/f0 61s
+    grouped/resnet18/s0/f1 72s
+    grouped/resnet18/s0/f2 57s
+    grouped/resnet18/s0/f3 63s
+    grouped/resnet18/s0/f4 64s
+    grouped/resnet18/s1/f0 59s
+    grouped/resnet18/s1/f1 61s
+    grouped/resnet18/s1/f2 63s
+    grouped/resnet18/s1/f3 65s
+    grouped/resnet18/s1/f4 65s
+    grouped/resnet18/s2/f0 66s
+    grouped/resnet18/s2/f1 74s
+    grouped/resnet18/s2/f2 75s
+    grouped/resnet18/s2/f3 77s
+    grouped/resnet18/s2/f4 70s
+  grouped  resnet18           acc 0.9083 f1 0.8939 ece 0.0156 aurc 0.0337
+  wrote results/E1_benchmark.json
+    grouped/mobilenetv3_small/s0/f0 39s
+    grouped/mobilenetv3_small/s0/f1 56s
+    grouped/mobilenetv3_small/s0/f2 76s
+    grouped/mobilenetv3_small/s0/f3 78s
+    grouped/mobilenetv3_small/s0/f4 75s
+    grouped/mobilenetv3_small/s1/f0 58s
+    grouped/mobilenetv3_small/s1/f1 53s
+    grouped/mobilenetv3_small/s1/f2 60s
+    grouped/mobilenetv3_small/s1/f3 55s
+    grouped/mobilenetv3_small/s1/f4 66s
+    grouped/mobilenetv3_small/s2/f0 50s
+    grouped/mobilenetv3_small/s2/f1 45s
+    grouped/mobilenetv3_small/s2/f2 53s
+    grouped/mobilenetv3_small/s2/f3 39s
+    grouped/mobilenetv3_small/s2/f4 37s
+  grouped  mobilenetv3_small  acc 0.9064 f1 0.8923 ece 0.0227 aurc 0.0296
+  wrote results/E1_benchmark.json
+    grouped/convnext_tiny/s0/f0 133s
+    grouped/convnext_tiny/s0/f1 129s
+    grouped/convnext_tiny/s0/f2 131s
+    grouped/convnext_tiny/s0/f3 143s
+    grouped/convnext_tiny/s0/f4 133s
+    grouped/convnext_tiny/s1/f0 142s
+    grouped/convnext_tiny/s1/f1 144s
+    grouped/convnext_tiny/s1/f2 148s
+manifest: 10851 slices across 3 cohorts | device cuda
+
+E1 benchmark: models x protocols x seeds
+    cached 2000/3064
+    grouped/calm/s0/f0 0s
+    grouped/calm/s0/f1 0s
+    grouped/calm/s0/f2 0s
+    grouped/calm/s0/f3 0s
+    grouped/calm/s0/f4 0s
+    grouped/calm/s1/f0 0s
+    grouped/calm/s1/f1 0s
+    grouped/calm/s1/f2 0s
+    grouped/calm/s1/f3 0s
+    grouped/calm/s1/f4 0s
+    grouped/calm/s2/f0 0s
+    grouped/calm/s2/f1 0s
+    grouped/calm/s2/f2 0s
+    grouped/calm/s2/f3 0s
+    grouped/calm/s2/f4 0s
+  grouped  calm               acc 0.9275 f1 0.9173 ece 0.0181 aurc 0.0282
+  wrote results/E1_benchmark.json
+    grouped/efficientnet_b0/s0/f0 0s
+    grouped/efficientnet_b0/s0/f1 0s
+    grouped/efficientnet_b0/s0/f2 0s
+    grouped/efficientnet_b0/s0/f3 0s
+    grouped/efficientnet_b0/s0/f4 0s
+    grouped/efficientnet_b0/s1/f0 0s
+    grouped/efficientnet_b0/s1/f1 0s
+    grouped/efficientnet_b0/s1/f2 0s
+    grouped/efficientnet_b0/s1/f3 0s
+    grouped/efficientnet_b0/s1/f4 0s
+    grouped/efficientnet_b0/s2/f0 0s
+    grouped/efficientnet_b0/s2/f1 0s
+    grouped/efficientnet_b0/s2/f2 0s
+    grouped/efficientnet_b0/s2/f3 0s
+    grouped/efficientnet_b0/s2/f4 0s
+  grouped  efficientnet_b0    acc 0.8908 f1 0.8758 ece 0.0168 aurc 0.0365
+  wrote results/E1_benchmark.json
+    grouped/resnet18/s0/f0 0s
+    grouped/resnet18/s0/f1 0s
+    grouped/resnet18/s0/f2 0s
+    grouped/resnet18/s0/f3 0s
+    grouped/resnet18/s0/f4 0s
+    grouped/resnet18/s1/f0 0s
+    grouped/resnet18/s1/f1 0s
+    grouped/resnet18/s1/f2 0s
+    grouped/resnet18/s1/f3 0s
+    grouped/resnet18/s1/f4 0s
+    grouped/resnet18/s2/f0 0s
+    grouped/resnet18/s2/f1 0s
+    grouped/resnet18/s2/f2 0s
+    grouped/resnet18/s2/f3 0s
+    grouped/resnet18/s2/f4 0s
+  grouped  resnet18           acc 0.9083 f1 0.8939 ece 0.0156 aurc 0.0337
+  wrote results/E1_benchmark.json
+    grouped/mobilenetv3_small/s0/f0 0s
+    grouped/mobilenetv3_small/s0/f1 0s
+    grouped/mobilenetv3_small/s0/f2 0s
+    grouped/mobilenetv3_small/s0/f3 0s
+    grouped/mobilenetv3_small/s0/f4 0s
+    grouped/mobilenetv3_small/s1/f0 0s
+    grouped/mobilenetv3_small/s1/f1 0s
+    grouped/mobilenetv3_small/s1/f2 0s
+    grouped/mobilenetv3_small/s1/f3 0s
+    grouped/mobilenetv3_small/s1/f4 0s
+    grouped/mobilenetv3_small/s2/f0 0s
+    grouped/mobilenetv3_small/s2/f1 0s
+    grouped/mobilenetv3_small/s2/f2 0s
+    grouped/mobilenetv3_small/s2/f3 0s
+    grouped/mobilenetv3_small/s2/f4 0s
+  grouped  mobilenetv3_small  acc 0.9064 f1 0.8923 ece 0.0227 aurc 0.0296
+  wrote results/E1_benchmark.json
+    grouped/convnext_tiny/s0/f0 0s
+    grouped/convnext_tiny/s0/f1 0s
+    grouped/convnext_tiny/s0/f2 0s
+    grouped/convnext_tiny/s0/f3 0s
+    grouped/convnext_tiny/s0/f4 0s
+    grouped/convnext_tiny/s1/f0 0s
+    grouped/convnext_tiny/s1/f1 0s
+    grouped/convnext_tiny/s1/f2 0s
+C:\Python313\Lib\site-packages\torch\nn\modules\module.py:1341: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:28.)
+  return t.to(
+    grouped/convnext_tiny/s1/f3 137s
+    grouped/convnext_tiny/s1/f4 132s
+    grouped/convnext_tiny/s2/f0 126s
+    grouped/convnext_tiny/s2/f1 125s
+    grouped/convnext_tiny/s2/f2 127s
+    grouped/convnext_tiny/s2/f3 131s
+    grouped/convnext_tiny/s2/f4 127s
+  grouped  convnext_tiny      acc 0.9391 f1 0.9313 ece 0.0216 aurc 0.0229
+  wrote results/E1_benchmark.json
+    grouped/deit_small/s0/f0 101s
+    grouped/deit_small/s0/f1 98s
+    grouped/deit_small/s0/f2 99s
+    grouped/deit_small/s0/f3 101s
+    grouped/deit_small/s0/f4 98s
+    grouped/deit_small/s1/f0 99s
+    grouped/deit_small/s1/f1 101s
+    grouped/deit_small/s1/f2 104s
+    grouped/deit_small/s1/f3 101s
+    grouped/deit_small/s1/f4 100s
+    grouped/deit_small/s2/f0 96s
+    grouped/deit_small/s2/f1 96s
+    grouped/deit_small/s2/f2 97s
+    grouped/deit_small/s2/f3 101s
+    grouped/deit_small/s2/f4 98s
+  grouped  deit_small         acc 0.9343 f1 0.9253 ece 0.0257 aurc 0.0204
+  wrote results/E1_benchmark.json
+    grouped/swin_tiny/s0/f0 165s
+    grouped/swin_tiny/s0/f1 159s
+    grouped/swin_tiny/s0/f2 161s
+    grouped/swin_tiny/s0/f3 164s
+    grouped/swin_tiny/s0/f4 159s
+    grouped/swin_tiny/s1/f0 161s
+    grouped/swin_tiny/s1/f1 164s
+    grouped/swin_tiny/s1/f2 169s
+    grouped/swin_tiny/s1/f3 164s
+    grouped/swin_tiny/s1/f4 164s
+    grouped/swin_tiny/s2/f0 156s
+    grouped/swin_tiny/s2/f1 156s
+    grouped/swin_tiny/s2/f2 159s
+    grouped/swin_tiny/s2/f3 164s
+    grouped/swin_tiny/s2/f4 159s
+  grouped  swin_tiny          acc 0.9341 f1 0.9266 ece 0.0220 aurc 0.0273
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+  wrote results/E1_benchmark.json
+    slice/calm/s0/f0 83s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    slice/calm/s0/f1 82s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    slice/calm/s0/f2 82s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    slice/calm/s0/f3 80s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    slice/calm/s0/f4 80s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    slice/calm/s1/f0 83s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    slice/calm/s1/f1 82s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    slice/calm/s1/f2 85s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    slice/calm/s1/f3 84s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    slice/calm/s1/f4 82s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    slice/calm/s2/f0 78s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    slice/calm/s2/f1 77s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    slice/calm/s2/f2 80s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    slice/calm/s2/f3 80s
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+    slice/calm/s2/f4 77s
+  slice    calm               acc 0.9699 f1 0.9652 ece 0.0102 aurc 0.0053
+  wrote results/E1_benchmark.json
+    slice/efficientnet_b0/s0/f0 81s
+    slice/efficientnet_b0/s0/f1 82s
+    slice/efficientnet_b0/s0/f2 82s
+    slice/efficientnet_b0/s0/f3 80s
+    slice/efficientnet_b0/s0/f4 80s
+    slice/efficientnet_b0/s1/f0 82s
+    slice/efficientnet_b0/s1/f1 82s
+    slice/efficientnet_b0/s1/f2 85s
+    slice/efficientnet_b0/s1/f3 84s
+    slice/efficientnet_b0/s1/f4 82s
+    slice/efficientnet_b0/s2/f0 78s
+    slice/efficientnet_b0/s2/f1 77s
+    slice/efficientnet_b0/s2/f2 80s
+    slice/efficientnet_b0/s2/f3 80s
+    slice/efficientnet_b0/s2/f4 77s
+  slice    efficientnet_b0    acc 0.9450 f1 0.9369 ece 0.0151 aurc 0.0093
+  wrote results/E1_benchmark.json
+    slice/resnet18/s0/f0 57s
+    slice/resnet18/s0/f1 56s
+    slice/resnet18/s0/f2 55s
+    slice/resnet18/s0/f3 54s
+    slice/resnet18/s0/f4 54s
+    slice/resnet18/s1/f0 55s
+    slice/resnet18/s1/f1 55s
+    slice/resnet18/s1/f2 57s
+    slice/resnet18/s1/f3 56s
+    slice/resnet18/s1/f4 56s
+    slice/resnet18/s2/f0 53s
+    slice/resnet18/s2/f1 52s
+    slice/resnet18/s2/f2 54s
+    slice/resnet18/s2/f3 54s
+    slice/resnet18/s2/f4 52s
+  slice    resnet18           acc 0.9407 f1 0.9304 ece 0.0131 aurc 0.0102
+  wrote results/E1_benchmark.json
+    slice/mobilenetv3_small/s0/f0 36s
+    slice/mobilenetv3_small/s0/f1 36s
+    slice/mobilenetv3_small/s0/f2 36s
+    slice/mobilenetv3_small/s0/f3 36s
+    slice/mobilenetv3_small/s0/f4 35s
+    slice/mobilenetv3_small/s1/f0 37s
+    slice/mobilenetv3_small/s1/f1 42s
+    slice/mobilenetv3_small/s1/f2 42s
+    slice/mobilenetv3_small/s1/f3 37s
+    slice/mobilenetv3_small/s1/f4 37s
+    slice/mobilenetv3_small/s2/f0 36s
+    slice/mobilenetv3_small/s2/f1 35s
+    slice/mobilenetv3_small/s2/f2 36s
+    slice/mobilenetv3_small/s2/f3 36s
+    slice/mobilenetv3_small/s2/f4 35s
+  slice    mobilenetv3_small  acc 0.9510 f1 0.9435 ece 0.0116 aurc 0.0068
+  wrote results/E1_benchmark.json
+    slice/convnext_tiny/s0/f0 129s
+    slice/convnext_tiny/s0/f1 131s
+    slice/convnext_tiny/s0/f2 133s
+    slice/convnext_tiny/s0/f3 129s
+    slice/convnext_tiny/s0/f4 129s
+    slice/convnext_tiny/s1/f0 133s
+    slice/convnext_tiny/s1/f1 133s
+    slice/convnext_tiny/s1/f2 137s
+    slice/convnext_tiny/s1/f3 135s
+    slice/convnext_tiny/s1/f4 133s
+    slice/convnext_tiny/s2/f0 127s
+    slice/convnext_tiny/s2/f1 125s
+    slice/convnext_tiny/s2/f2 129s
+    slice/convnext_tiny/s2/f3 138s
+    slice/convnext_tiny/s2/f4 126s
+  slice    convnext_tiny      acc 0.9751 f1 0.9719 ece 0.0140 aurc 0.0032
+  wrote results/E1_benchmark.json
+    slice/deit_small/s0/f0 102s
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E1 benchmark: models x protocols x seeds
+    cached 2000/3064
+    grouped/calm/s0/f0 0s
+    grouped/calm/s0/f1 0s
+    grouped/calm/s0/f2 0s
+    grouped/calm/s0/f3 0s
+    grouped/calm/s0/f4 0s
+    grouped/calm/s1/f0 0s
+    grouped/calm/s1/f1 0s
+    grouped/calm/s1/f2 0s
+    grouped/calm/s1/f3 0s
+    grouped/calm/s1/f4 0s
+    grouped/calm/s2/f0 0s
+    grouped/calm/s2/f1 0s
+    grouped/calm/s2/f2 0s
+    grouped/calm/s2/f3 0s
+    grouped/calm/s2/f4 0s
+  grouped  calm               acc 0.9275 f1 0.9173 ece 0.0181 aurc 0.0282
+C:\Python313\Lib\site-packages\torch\nn\modules\module.py:1341: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:28.)
+  return t.to(
+  wrote results/E1_benchmark.json
+    grouped/calm_l/s0/f0 139s
+    grouped/calm_l/s0/f1 133s
+    grouped/calm_l/s0/f2 134s
+    grouped/calm_l/s0/f3 137s
+    grouped/calm_l/s0/f4 132s
+    grouped/calm_l/s1/f0 134s
+    grouped/calm_l/s1/f1 137s
+    grouped/calm_l/s1/f2 141s
+    grouped/calm_l/s1/f3 137s
+    grouped/calm_l/s1/f4 137s
+    grouped/calm_l/s2/f0 130s
+    grouped/calm_l/s2/f1 130s
+    grouped/calm_l/s2/f2 133s
+    grouped/calm_l/s2/f3 138s
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E1 benchmark: models x protocols x seeds
+    cached 2000/3064
+    grouped/calm/s0/f0 0s
+    grouped/calm/s0/f1 0s
+    grouped/calm/s0/f2 0s
+    grouped/calm/s0/f3 0s
+    grouped/calm/s0/f4 0s
+    grouped/calm/s1/f0 0s
+    grouped/calm/s1/f1 0s
+    grouped/calm/s1/f2 0s
+    grouped/calm/s1/f3 0s
+    grouped/calm/s1/f4 0s
+    grouped/calm/s2/f0 0s
+    grouped/calm/s2/f1 0s
+    grouped/calm/s2/f2 0s
+    grouped/calm/s2/f3 0s
+    grouped/calm/s2/f4 0s
+  grouped  calm               acc 0.9275 f1 0.9173 ece 0.0181 aurc 0.0282
+  wrote results/E1_benchmark.json
+    grouped/calm_l/s0/f0 0s
+    grouped/calm_l/s0/f1 0s
+    grouped/calm_l/s0/f2 0s
+    grouped/calm_l/s0/f3 0s
+    grouped/calm_l/s0/f4 0s
+    grouped/calm_l/s1/f0 0s
+    grouped/calm_l/s1/f1 0s
+    grouped/calm_l/s1/f2 0s
+    grouped/calm_l/s1/f3 0s
+    grouped/calm_l/s1/f4 0s
+    grouped/calm_l/s2/f0 0s
+    grouped/calm_l/s2/f1 0s
+    grouped/calm_l/s2/f2 0s
+    grouped/calm_l/s2/f3 0s
+C:\Python313\Lib\site-packages\torch\nn\modules\module.py:1341: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:28.)
+  return t.to(
+    grouped/calm_l/s2/f4 138s
+  grouped  calm_l             acc 0.9357 f1 0.9284 ece 0.0203 aurc 0.0175
+  wrote results/E1_benchmark.json
+    grouped/efficientnet_b0/s0/f0 0s
+    grouped/efficientnet_b0/s0/f1 0s
+    grouped/efficientnet_b0/s0/f2 0s
+    grouped/efficientnet_b0/s0/f3 0s
+    grouped/efficientnet_b0/s0/f4 0s
+    grouped/efficientnet_b0/s1/f0 0s
+    grouped/efficientnet_b0/s1/f1 0s
+    grouped/efficientnet_b0/s1/f2 0s
+    grouped/efficientnet_b0/s1/f3 0s
+    grouped/efficientnet_b0/s1/f4 0s
+    grouped/efficientnet_b0/s2/f0 0s
+    grouped/efficientnet_b0/s2/f1 0s
+    grouped/efficientnet_b0/s2/f2 0s
+    grouped/efficientnet_b0/s2/f3 0s
+    grouped/efficientnet_b0/s2/f4 0s
+  grouped  efficientnet_b0    acc 0.8908 f1 0.8758 ece 0.0168 aurc 0.0365
+  wrote results/E1_benchmark.json
+    grouped/resnet18/s0/f0 0s
+    grouped/resnet18/s0/f1 0s
+    grouped/resnet18/s0/f2 0s
+    grouped/resnet18/s0/f3 0s
+    grouped/resnet18/s0/f4 0s
+    grouped/resnet18/s1/f0 0s
+    grouped/resnet18/s1/f1 0s
+    grouped/resnet18/s1/f2 0s
+    grouped/resnet18/s1/f3 0s
+    grouped/resnet18/s1/f4 0s
+    grouped/resnet18/s2/f0 0s
+    grouped/resnet18/s2/f1 0s
+    grouped/resnet18/s2/f2 0s
+    grouped/resnet18/s2/f3 0s
+    grouped/resnet18/s2/f4 0s
+  grouped  resnet18           acc 0.9083 f1 0.8939 ece 0.0156 aurc 0.0337
+  wrote results/E1_benchmark.json
+    grouped/mobilenetv3_small/s0/f0 0s
+    grouped/mobilenetv3_small/s0/f1 0s
+    grouped/mobilenetv3_small/s0/f2 0s
+    grouped/mobilenetv3_small/s0/f3 0s
+    grouped/mobilenetv3_small/s0/f4 0s
+    grouped/mobilenetv3_small/s1/f0 0s
+    grouped/mobilenetv3_small/s1/f1 0s
+    grouped/mobilenetv3_small/s1/f2 0s
+    grouped/mobilenetv3_small/s1/f3 0s
+    grouped/mobilenetv3_small/s1/f4 0s
+    grouped/mobilenetv3_small/s2/f0 0s
+    grouped/mobilenetv3_small/s2/f1 0s
+    grouped/mobilenetv3_small/s2/f2 0s
+    grouped/mobilenetv3_small/s2/f3 0s
+    grouped/mobilenetv3_small/s2/f4 0s
+  grouped  mobilenetv3_small  acc 0.9064 f1 0.8923 ece 0.0227 aurc 0.0296
+  wrote results/E1_benchmark.json
+    grouped/convnext_tiny/s0/f0 0s
+    grouped/convnext_tiny/s0/f1 0s
+    grouped/convnext_tiny/s0/f2 0s
+    grouped/convnext_tiny/s0/f3 0s
+    grouped/convnext_tiny/s0/f4 0s
+    grouped/convnext_tiny/s1/f0 0s
+    grouped/convnext_tiny/s1/f1 0s
+    grouped/convnext_tiny/s1/f2 0s
+    grouped/convnext_tiny/s1/f3 0s
+    grouped/convnext_tiny/s1/f4 0s
+    grouped/convnext_tiny/s2/f0 0s
+    grouped/convnext_tiny/s2/f1 0s
+    grouped/convnext_tiny/s2/f2 0s
+    grouped/convnext_tiny/s2/f3 0s
+    grouped/convnext_tiny/s2/f4 0s
+  grouped  convnext_tiny      acc 0.9391 f1 0.9313 ece 0.0216 aurc 0.0229
+  wrote results/E1_benchmark.json
+    grouped/deit_small/s0/f0 0s
+    grouped/deit_small/s0/f1 0s
+    grouped/deit_small/s0/f2 0s
+    grouped/deit_small/s0/f3 0s
+    grouped/deit_small/s0/f4 0s
+    grouped/deit_small/s1/f0 0s
+    grouped/deit_small/s1/f1 0s
+    grouped/deit_small/s1/f2 0s
+    grouped/deit_small/s1/f3 0s
+    grouped/deit_small/s1/f4 0s
+    grouped/deit_small/s2/f0 0s
+    grouped/deit_small/s2/f1 0s
+    grouped/deit_small/s2/f2 0s
+    grouped/deit_small/s2/f3 0s
+    grouped/deit_small/s2/f4 0s
+  grouped  deit_small         acc 0.9343 f1 0.9253 ece 0.0257 aurc 0.0204
+  wrote results/E1_benchmark.json
+    grouped/swin_tiny/s0/f0 0s
+    grouped/swin_tiny/s0/f1 0s
+    grouped/swin_tiny/s0/f2 0s
+    grouped/swin_tiny/s0/f3 0s
+    grouped/swin_tiny/s0/f4 0s
+    grouped/swin_tiny/s1/f0 0s
+    grouped/swin_tiny/s1/f1 0s
+    grouped/swin_tiny/s1/f2 0s
+    grouped/swin_tiny/s1/f3 0s
+    grouped/swin_tiny/s1/f4 0s
+    grouped/swin_tiny/s2/f0 0s
+    grouped/swin_tiny/s2/f1 0s
+    grouped/swin_tiny/s2/f2 0s
+    grouped/swin_tiny/s2/f3 0s
+    grouped/swin_tiny/s2/f4 0s
+  grouped  swin_tiny          acc 0.9341 f1 0.9266 ece 0.0220 aurc 0.0273
+  wrote results/E1_benchmark.json
+    slice/calm/s0/f0 0s
+    slice/calm/s0/f1 0s
+    slice/calm/s0/f2 0s
+    slice/calm/s0/f3 0s
+    slice/calm/s0/f4 0s
+    slice/calm/s1/f0 0s
+    slice/calm/s1/f1 0s
+    slice/calm/s1/f2 0s
+    slice/calm/s1/f3 0s
+    slice/calm/s1/f4 0s
+    slice/calm/s2/f0 0s
+    slice/calm/s2/f1 0s
+    slice/calm/s2/f2 0s
+    slice/calm/s2/f3 0s
+    slice/calm/s2/f4 0s
+  slice    calm               acc 0.9699 f1 0.9652 ece 0.0102 aurc 0.0053
+  wrote results/E1_benchmark.json
+    slice/efficientnet_b0/s0/f0 0s
+    slice/efficientnet_b0/s0/f1 0s
+    slice/efficientnet_b0/s0/f2 0s
+    slice/efficientnet_b0/s0/f3 0s
+    slice/efficientnet_b0/s0/f4 0s
+    slice/efficientnet_b0/s1/f0 0s
+    slice/efficientnet_b0/s1/f1 0s
+    slice/efficientnet_b0/s1/f2 0s
+    slice/efficientnet_b0/s1/f3 0s
+    slice/efficientnet_b0/s1/f4 0s
+    slice/efficientnet_b0/s2/f0 0s
+    slice/efficientnet_b0/s2/f1 0s
+    slice/efficientnet_b0/s2/f2 0s
+    slice/efficientnet_b0/s2/f3 0s
+    slice/efficientnet_b0/s2/f4 0s
+  slice    efficientnet_b0    acc 0.9450 f1 0.9369 ece 0.0151 aurc 0.0093
+  wrote results/E1_benchmark.json
+    slice/resnet18/s0/f0 0s
+    slice/resnet18/s0/f1 0s
+    slice/resnet18/s0/f2 0s
+    slice/resnet18/s0/f3 0s
+    slice/resnet18/s0/f4 0s
+    slice/resnet18/s1/f0 0s
+    slice/resnet18/s1/f1 0s
+    slice/resnet18/s1/f2 0s
+    slice/resnet18/s1/f3 0s
+    slice/resnet18/s1/f4 0s
+    slice/resnet18/s2/f0 0s
+    slice/resnet18/s2/f1 0s
+    slice/resnet18/s2/f2 0s
+    slice/resnet18/s2/f3 0s
+    slice/resnet18/s2/f4 0s
+  slice    resnet18           acc 0.9407 f1 0.9304 ece 0.0131 aurc 0.0102
+  wrote results/E1_benchmark.json
+    slice/mobilenetv3_small/s0/f0 0s
+    slice/mobilenetv3_small/s0/f1 0s
+    slice/mobilenetv3_small/s0/f2 0s
+    slice/mobilenetv3_small/s0/f3 0s
+    slice/mobilenetv3_small/s0/f4 0s
+    slice/mobilenetv3_small/s1/f0 0s
+    slice/mobilenetv3_small/s1/f1 0s
+    slice/mobilenetv3_small/s1/f2 0s
+    slice/mobilenetv3_small/s1/f3 0s
+    slice/mobilenetv3_small/s1/f4 0s
+    slice/mobilenetv3_small/s2/f0 0s
+    slice/mobilenetv3_small/s2/f1 0s
+    slice/mobilenetv3_small/s2/f2 0s
+    slice/mobilenetv3_small/s2/f3 0s
+    slice/mobilenetv3_small/s2/f4 0s
+  slice    mobilenetv3_small  acc 0.9510 f1 0.9435 ece 0.0116 aurc 0.0068
+  wrote results/E1_benchmark.json
+    slice/convnext_tiny/s0/f0 0s
+    slice/convnext_tiny/s0/f1 0s
+    slice/convnext_tiny/s0/f2 0s
+    slice/convnext_tiny/s0/f3 0s
+    slice/convnext_tiny/s0/f4 0s
+    slice/convnext_tiny/s1/f0 0s
+    slice/convnext_tiny/s1/f1 0s
+    slice/convnext_tiny/s1/f2 0s
+    slice/convnext_tiny/s1/f3 0s
+    slice/convnext_tiny/s1/f4 0s
+    slice/convnext_tiny/s2/f0 0s
+    slice/convnext_tiny/s2/f1 0s
+    slice/convnext_tiny/s2/f2 0s
+    slice/convnext_tiny/s2/f3 0s
+    slice/convnext_tiny/s2/f4 0s
+  slice    convnext_tiny      acc 0.9751 f1 0.9719 ece 0.0140 aurc 0.0032
+  wrote results/E1_benchmark.json
+    slice/deit_small/s0/f0 0s
+    slice/deit_small/s0/f1 113s
+    slice/deit_small/s0/f2 103s
+    slice/deit_small/s0/f3 100s
+    slice/deit_small/s0/f4 100s
+    slice/deit_small/s1/f0 103s
+    slice/deit_small/s1/f1 103s
+    slice/deit_small/s1/f2 106s
+    slice/deit_small/s1/f3 104s
+    slice/deit_small/s1/f4 103s
+    slice/deit_small/s2/f0 115s
+    slice/deit_small/s2/f1 113s
+    slice/deit_small/s2/f2 99s
+    slice/deit_small/s2/f3 99s
+    slice/deit_small/s2/f4 96s
+  slice    deit_small         acc 0.9678 f1 0.9630 ece 0.0152 aurc 0.0066
+  wrote results/E1_benchmark.json
+    slice/swin_tiny/s0/f0 164s
+    slice/swin_tiny/s0/f1 167s
+    slice/swin_tiny/s0/f2 166s
+    slice/swin_tiny/s0/f3 162s
+    slice/swin_tiny/s0/f4 161s
+    slice/swin_tiny/s1/f0 167s
+    slice/swin_tiny/s1/f1 167s
+    slice/swin_tiny/s1/f2 172s
+    slice/swin_tiny/s1/f3 169s
+    slice/swin_tiny/s1/f4 167s
+    slice/swin_tiny/s2/f0 159s
+    slice/swin_tiny/s2/f1 157s
+    slice/swin_tiny/s2/f2 161s
+    slice/swin_tiny/s2/f3 161s
+    slice/swin_tiny/s2/f4 156s
+  slice    swin_tiny          acc 0.9686 f1 0.9646 ece 0.0176 aurc 0.0074
+  wrote results/E1_benchmark.json
+  wrote results/E1_benchmark.json
+[bench] done in 67.7 min
+
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E5 ablations around the final model
+    cached 2000/3064
+  full: fold files missing, skipped
+  single_member: fold files missing, skipped
+  standard_recipe    acc 0.9357 f1 0.9284 ece 0.0203
+  wrote results/E5_ablation.json
+  compact_trunk      acc 0.9275 f1 0.9173 ece 0.0181
+  wrote results/E5_ablation.json
+  no_fusion_head     acc 0.9391 f1 0.9313 ece 0.0216
+C:\Python313\Lib\site-packages\torch\nn\modules\module.py:1341: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:28.)
+  return t.to(
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E5 ablations around the final model
+    cached 2000/3064
+  full: fold files missing, skipped
+  single_member      acc 0.9377 f1 0.9300 ece 0.0199
+  wrote results/E5_ablation.json
+  standard_recipe    acc 0.9357 f1 0.9284 ece 0.0203
+  wrote results/E5_ablation.json
+  compact_trunk      acc 0.9275 f1 0.9173 ece 0.0181
+  wrote results/E5_ablation.json
+  no_fusion_head     acc 0.9391 f1 0.9313 ece 0.0216
+C:\Python313\Lib\site-packages\torch\nn\modules\module.py:1341: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:28.)
+  return t.to(
+  wrote results/E5_ablation.json
+Traceback (most recent call last):
+  File "F:\Yash_AJSE\work\scripts\run_experiments.py", line 599, in <module>
+    main(sys.argv[1:])
+    ~~~~^^^^^^^^^^^^^^
+  File "F:\Yash_AJSE\work\scripts\run_experiments.py", line 594, in main
+    STAGES[s](df)
+    ~~~~~~~~~^^^^
+  File "F:\Yash_AJSE\work\scripts\run_experiments.py", line 370, in stage_abl
+    run_fold("final", ch, tr, te, seed, f"abl2_{vn}_s{seed}_f{k}",
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+             model_kw=trained[vn])
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Yash_AJSE\work\scripts\run_experiments.py", line 189, in run_fold
+    model, log = T.train_one(arch, df.iloc[tr2], None, N_CLS, seed=seed, device=DEV,
+                 ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             **kw, **(model_kw or {}))
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Yash_AJSE\work\src\train.py", line 164, in train_one
+    z = model(x)
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "F:\Yash_AJSE\work\src\models.py", line 83, in forward
+    feats = self.trunk(x)[-self.n_scales:]
+            ~~~~~~~~~~^^^
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Python313\Lib\site-packages\timm\models\_features.py", line 345, in forward
+    return list(self._collect(x).values())
+                ~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\site-packages\timm\models\_features.py", line 299, in _collect
+    x = module(x)
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Python313\Lib\site-packages\timm\models\convnext.py", line 306, in forward
+    x = self.blocks(x)
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\container.py", line 240, in forward
+    input = module(input)
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Python313\Lib\site-packages\timm\models\convnext.py", line 207, in forward
+    x = self.mlp(x)
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Python313\Lib\site-packages\timm\layers\mlp.py", line 48, in forward
+    x = self.fc1(x)
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: CUBLAS_STATUS_NOT_SUPPORTED when calling `cublasLtMatmulAlgoGetHeuristic( ltHandle, computeDesc.descriptor(), Adesc.descriptor(), Bdesc.descriptor(), Cdesc.descriptor(), Cdesc.descriptor(), preference.descriptor(), 1, &heuristicResult, &returnedResult)`
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E5 ablations around the final model
+    cached 2000/3064
+  full               acc 0.9435 f1 0.9360 ece 0.0190
+  wrote results/E5_ablation.json
+  single_member      acc 0.9377 f1 0.9300 ece 0.0199
+  wrote results/E5_ablation.json
+  standard_recipe    acc 0.9357 f1 0.9284 ece 0.0203
+  wrote results/E5_ablation.json
+  compact_trunk      acc 0.9275 f1 0.9173 ece 0.0181
+  wrote results/E5_ablation.json
+  no_fusion_head     acc 0.9391 f1 0.9313 ece 0.0216
+C:\Python313\Lib\site-packages\torch\nn\modules\module.py:1341: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:28.)
+  return t.to(
+  wrote results/E5_ablation.json
+  fusion_concat      acc 0.9475 f1 0.9408 ece 0.0160
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E4 cross-cohort OOD (train on Cheng, patient-grouped)
+    cached 2000/3064
+    cached 2000/2764
+  sartaj: 2764 slices
+    cached 2000/5023
+    cached 4000/5023
+  hemg: 5023 slices
+  pmram: 1109 slices
+C:\Python313\Lib\site-packages\torch\nn\modules\module.py:1341: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:28.)
+  return t.to(
+fatal   : Memory allocation failure
+Traceback (most recent call last):
+  File "F:\Yash_AJSE\work\scripts\run_experiments.py", line 599, in <module>
+    main(sys.argv[1:])
+    ~~~~^^^^^^^^^^^^^^
+  File "F:\Yash_AJSE\work\scripts\run_experiments.py", line 594, in main
+    STAGES[s](df)
+    ~~~~~~~~~^^^^
+  File "F:\Yash_AJSE\work\scripts\run_experiments.py", line 299, in stage_ood
+    models, tta, _ = train_model(mn, ch.iloc[tr2], seed, members=mem)
+                     ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Yash_AJSE\work\scripts\run_experiments.py", line 71, in train_model
+    ms = [T.train_one(arch, df_tr, None, N_CLS, seed=100 * seed + k, device=DEV, **kw, **model_kw)[0]
+          ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Yash_AJSE\work\src\train.py", line 166, in train_one
+    scaler.scale(loss).backward()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\site-packages\torch\_tensor.py", line 648, in backward
+    torch.autograd.backward(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        self, gradient, retain_graph, create_graph, inputs=inputs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Python313\Lib\site-packages\torch\autograd\__init__.py", line 353, in backward
+    _engine_run_backward(
+    ~~~~~~~~~~~~~~~~~~~~^
+        tensors,
+        ^^^^^^^^
+    ...<5 lines>...
+        accumulate_grad=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Python313\Lib\site-packages\torch\autograd\graph.py", line 824, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        t_outputs, *args, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )  # Calls into the C++ engine to run the backward pass
+    ^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 12.00 GiB of which 8.85 GiB is free. Of the allocated memory 2.01 GiB is allocated by PyTorch, and 87.96 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E4b contaminated external validation (train hemg)
+    cached 2000/5023
+    cached 4000/5023
+    cached 2000/2764
+  sartaj: 2764 -> 769 after removing 1995 confirmed duplicates of hemg
+  pmram: 1109 -> 525 after removing 584 confirmed duplicates of hemg
+C:\Python313\Lib\site-packages\torch\nn\modules\module.py:1341: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:28.)
+  return t.to(
+    final seed0 done
+    final seed1 done
+    final seed2 done
+  final -> sartaj: as-published 97.68% vs decontaminated 92.15% (inflation +5.53 pts)
+  final -> pmram: as-published 98.92% vs decontaminated 97.90% (inflation +1.01 pts)
+  wrote results/E4b_contamination.json
+    efficientnet_b0 seed0 done
+    cached 2000/3064
+    cached 2000/3064
+concat member s0 m1 f0 done
+concat member s0 m2 f0 done
+concat member s0 m1 f1 done
+  missing fold files for seed 0 fold 1; stopping
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E5 ablations around the final model
+    cached 2000/3064
+  full: fold files missing, skipped
+  single_member      acc 0.9475 f1 0.9408 ece 0.0160
+  wrote results/E5_ablation.json
+  gated_fusion       acc 0.9377 f1 0.9300 ece 0.0199
+  wrote results/E5_ablation.json
+  compact_trunk      acc 0.9275 f1 0.9173 ece 0.0181
+  wrote results/E5_ablation.json
+  no_fusion_head     acc 0.9391 f1 0.9313 ece 0.0216
+    cached 2000/3064
+concat member s0 m2 f1 done
+concat member s0 m1 f2 done
+concat member s0 m2 f2 done
+concat member s0 m1 f3 done
+concat member s0 m2 f3 done
+concat member s0 m1 f4 done
+concat member s0 m2 f4 done
+concat member s1 m1 f0 done
+    cached 2000/3064
+concat member s1 m2 f0 done
+concat member s1 m1 f1 done
+concat member s1 m2 f1 done
+concat member s1 m1 f2 done
+concat member s1 m2 f2 done
+concat member s1 m1 f3 done
+concat member s1 m2 f3 done
+concat member s1 m1 f4 done
+concat member s1 m2 f4 done
+concat member s2 m1 f0 done
+concat member s2 m2 f0 done
+concat member s2 m1 f1 done
+concat member s2 m2 f1 done
+concat member s2 m1 f2 done
+concat member s2 m2 f2 done
+concat member s2 m1 f3 done
+concat member s2 m2 f3 done
+concat member s2 m1 f4 done
+concat member s2 m2 f4 done
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E5 ablations around the final model
+    cached 2000/3064
+  full               acc 0.9490 f1 0.9420 ece 0.0168
+  wrote results/E5_ablation.json
+  single_member      acc 0.9475 f1 0.9408 ece 0.0160
+  wrote results/E5_ablation.json
+  gated_fusion       acc 0.9377 f1 0.9300 ece 0.0199
+  wrote results/E5_ablation.json
+  compact_trunk      acc 0.9275 f1 0.9173 ece 0.0181
+  wrote results/E5_ablation.json
+  no_fusion_head     acc 0.9391 f1 0.9313 ece 0.0216
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E5 ablations around the final model
+Traceback (most recent call last):
+  File "F:\Yash_AJSE\work\scripts\run_experiments.py", line 607, in <module>
+    main(sys.argv[1:])
+    ~~~~^^^^^^^^^^^^^^
+  File "F:\Yash_AJSE\work\scripts\run_experiments.py", line 602, in main
+    STAGES[s](df)
+    ~~~~~~~~~^^^^
+  File "F:\Yash_AJSE\work\scripts\run_experiments.py", line 341, in stage_abl
+    T.load_cache(ch["path"].tolist())
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Yash_AJSE\work\src\train.py", line 40, in load_cache
+    a = np.asarray(im, dtype=np.uint8)
+  File "C:\Python313\Lib\site-packages\PIL\Image.py", line 735, in __array_interface__
+    new["data"] = self.tobytes()
+                  ~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\site-packages\PIL\Image.py", line 819, in tobytes
+    return b"".join(output)
+           ~~~~~~~~^^^^^^^^
+MemoryError
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E5 ablations around the final model
+    cached 2000/3064
+  full               acc 0.9490 f1 0.9420 ece 0.0168
+  wrote results/E5_ablation.json
+  single_member      acc 0.9475 f1 0.9408 ece 0.0160
+  wrote results/E5_ablation.json
+  gated_fusion       acc 0.9377 f1 0.9300 ece 0.0199
+  wrote results/E5_ablation.json
+  compact_trunk      acc 0.9275 f1 0.9173 ece 0.0181
+  wrote results/E5_ablation.json
+  no_fusion_head     acc 0.9391 f1 0.9313 ece 0.0216
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E1 benchmark: models x protocols x seeds
+    cached 2000/3064
+    grouped/calm/s0/f0 0s
+    grouped/calm/s0/f1 0s
+    grouped/calm/s0/f2 0s
+    grouped/calm/s0/f3 0s
+    grouped/calm/s0/f4 0s
+    grouped/calm/s1/f0 0s
+    grouped/calm/s1/f1 0s
+    grouped/calm/s1/f2 0s
+    grouped/calm/s1/f3 0s
+    grouped/calm/s1/f4 0s
+    grouped/calm/s2/f0 0s
+    grouped/calm/s2/f1 0s
+    grouped/calm/s2/f2 0s
+    grouped/calm/s2/f3 0s
+    grouped/calm/s2/f4 0s
+  grouped  calm               acc 0.9275 f1 0.9173 ece 0.0181 aurc 0.0282
+  wrote results/E1_benchmark.json
+    grouped/calm_l/s0/f0 0s
+    grouped/calm_l/s0/f1 0s
+    grouped/calm_l/s0/f2 0s
+    grouped/calm_l/s0/f3 0s
+    grouped/calm_l/s0/f4 0s
+    grouped/calm_l/s1/f0 0s
+    grouped/calm_l/s1/f1 0s
+    grouped/calm_l/s1/f2 0s
+    grouped/calm_l/s1/f3 0s
+    grouped/calm_l/s1/f4 0s
+    grouped/calm_l/s2/f0 0s
+    grouped/calm_l/s2/f1 0s
+    grouped/calm_l/s2/f2 0s
+    grouped/calm_l/s2/f3 0s
+    grouped/calm_l/s2/f4 0s
+  grouped  calm_l             acc 0.9357 f1 0.9284 ece 0.0203 aurc 0.0175
+  wrote results/E1_benchmark.json
+    grouped/efficientnet_b0/s0/f0 0s
+    grouped/efficientnet_b0/s0/f1 0s
+    grouped/efficientnet_b0/s0/f2 0s
+    grouped/efficientnet_b0/s0/f3 0s
+    grouped/efficientnet_b0/s0/f4 0s
+    grouped/efficientnet_b0/s1/f0 0s
+    grouped/efficientnet_b0/s1/f1 0s
+    grouped/efficientnet_b0/s1/f2 0s
+    grouped/efficientnet_b0/s1/f3 0s
+    grouped/efficientnet_b0/s1/f4 0s
+    grouped/efficientnet_b0/s2/f0 0s
+    grouped/efficientnet_b0/s2/f1 0s
+    grouped/efficientnet_b0/s2/f2 0s
+    grouped/efficientnet_b0/s2/f3 0s
+    grouped/efficientnet_b0/s2/f4 0s
+  grouped  efficientnet_b0    acc 0.8908 f1 0.8758 ece 0.0168 aurc 0.0365
+  wrote results/E1_benchmark.json
+    grouped/resnet18/s0/f0 0s
+    grouped/resnet18/s0/f1 0s
+    grouped/resnet18/s0/f2 0s
+    grouped/resnet18/s0/f3 0s
+    grouped/resnet18/s0/f4 0s
+    grouped/resnet18/s1/f0 0s
+    grouped/resnet18/s1/f1 0s
+    grouped/resnet18/s1/f2 0s
+    grouped/resnet18/s1/f3 0s
+    grouped/resnet18/s1/f4 0s
+    grouped/resnet18/s2/f0 0s
+    grouped/resnet18/s2/f1 0s
+    grouped/resnet18/s2/f2 0s
+    grouped/resnet18/s2/f3 0s
+    grouped/resnet18/s2/f4 0s
+  grouped  resnet18           acc 0.9083 f1 0.8939 ece 0.0156 aurc 0.0337
+  wrote results/E1_benchmark.json
+    grouped/mobilenetv3_small/s0/f0 0s
+    grouped/mobilenetv3_small/s0/f1 0s
+    grouped/mobilenetv3_small/s0/f2 0s
+    grouped/mobilenetv3_small/s0/f3 0s
+    grouped/mobilenetv3_small/s0/f4 0s
+    grouped/mobilenetv3_small/s1/f0 0s
+    grouped/mobilenetv3_small/s1/f1 0s
+    grouped/mobilenetv3_small/s1/f2 0s
+    grouped/mobilenetv3_small/s1/f3 0s
+    grouped/mobilenetv3_small/s1/f4 0s
+    grouped/mobilenetv3_small/s2/f0 0s
+    grouped/mobilenetv3_small/s2/f1 0s
+    grouped/mobilenetv3_small/s2/f2 0s
+    grouped/mobilenetv3_small/s2/f3 0s
+    grouped/mobilenetv3_small/s2/f4 0s
+  grouped  mobilenetv3_small  acc 0.9064 f1 0.8923 ece 0.0227 aurc 0.0296
+  wrote results/E1_benchmark.json
+    grouped/convnext_tiny/s0/f0 0s
+    grouped/convnext_tiny/s0/f1 0s
+    grouped/convnext_tiny/s0/f2 0s
+    grouped/convnext_tiny/s0/f3 0s
+    grouped/convnext_tiny/s0/f4 0s
+    grouped/convnext_tiny/s1/f0 0s
+    grouped/convnext_tiny/s1/f1 0s
+    grouped/convnext_tiny/s1/f2 0s
+    grouped/convnext_tiny/s1/f3 0s
+    grouped/convnext_tiny/s1/f4 0s
+    grouped/convnext_tiny/s2/f0 0s
+    grouped/convnext_tiny/s2/f1 0s
+    grouped/convnext_tiny/s2/f2 0s
+    grouped/convnext_tiny/s2/f3 0s
+    grouped/convnext_tiny/s2/f4 0s
+  grouped  convnext_tiny      acc 0.9391 f1 0.9313 ece 0.0216 aurc 0.0229
+  wrote results/E1_benchmark.json
+    grouped/deit_small/s0/f0 0s
+    grouped/deit_small/s0/f1 0s
+    grouped/deit_small/s0/f2 0s
+    grouped/deit_small/s0/f3 0s
+    grouped/deit_small/s0/f4 0s
+    grouped/deit_small/s1/f0 0s
+    grouped/deit_small/s1/f1 0s
+    grouped/deit_small/s1/f2 0s
+    grouped/deit_small/s1/f3 0s
+    grouped/deit_small/s1/f4 0s
+    grouped/deit_small/s2/f0 0s
+    grouped/deit_small/s2/f1 0s
+    grouped/deit_small/s2/f2 0s
+    grouped/deit_small/s2/f3 0s
+    grouped/deit_small/s2/f4 0s
+  grouped  deit_small         acc 0.9343 f1 0.9253 ece 0.0257 aurc 0.0204
+  wrote results/E1_benchmark.json
+    grouped/swin_tiny/s0/f0 0s
+    grouped/swin_tiny/s0/f1 0s
+    grouped/swin_tiny/s0/f2 0s
+    grouped/swin_tiny/s0/f3 0s
+    grouped/swin_tiny/s0/f4 0s
+    grouped/swin_tiny/s1/f0 0s
+    grouped/swin_tiny/s1/f1 0s
+    grouped/swin_tiny/s1/f2 0s
+    grouped/swin_tiny/s1/f3 0s
+    grouped/swin_tiny/s1/f4 0s
+    grouped/swin_tiny/s2/f0 0s
+    grouped/swin_tiny/s2/f1 0s
+    grouped/swin_tiny/s2/f2 0s
+    grouped/swin_tiny/s2/f3 0s
+    grouped/swin_tiny/s2/f4 0s
+  grouped  swin_tiny          acc 0.9341 f1 0.9266 ece 0.0220 aurc 0.0273
+  wrote results/E1_benchmark.json
+    grouped/resnet50/s0/f0 124s
+    grouped/resnet50/s0/f1 116s
+    grouped/resnet50/s0/f2 117s
+    grouped/resnet50/s0/f3 120s
+    grouped/resnet50/s0/f4 115s
+  grouped  resnet50           acc 0.9008 f1 0.8904 ece 0.0244 aurc 0.0380
+  wrote results/E1_benchmark.json
+    grouped/densenet121/s0/f0 136s
+    grouped/densenet121/s0/f1 128s
+    grouped/densenet121/s0/f2 130s
+    grouped/densenet121/s0/f3 132s
+    grouped/densenet121/s0/f4 138s
+  grouped  densenet121        acc 0.9220 f1 0.9137 ece 0.0315 aurc 0.0266
+C:\Python313\Lib\site-packages\huggingface_hub\file_download.py:143: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\pc\.cache\huggingface\hub\models--timm--vgg16_bn.tv_in1k. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+  wrote results/E1_benchmark.json
+Traceback (most recent call last):
+  File "F:\Yash_AJSE\work\scripts\run_experiments.py", line 607, in <module>
+    main(sys.argv[1:])
+    ~~~~^^^^^^^^^^^^^^
+  File "F:\Yash_AJSE\work\scripts\run_experiments.py", line 602, in main
+    STAGES[s](df)
+    ~~~~~~~~~^^^^
+  File "F:\Yash_AJSE\work\scripts\run_experiments.py", line 252, in stage_bench
+    r = run_fold(mn, ch, tr, te, seed, f"bench_{proto}_{mn}_s{seed}_f{k}")
+  File "F:\Yash_AJSE\work\scripts\run_experiments.py", line 194, in run_fold
+    model, log = T.train_one(model_name, df.iloc[tr2], None, N_CLS, seed=seed,
+                 ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             epochs=epochs or EPOCHS, device=DEV, **(model_kw or {}))
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Yash_AJSE\work\src\train.py", line 164, in train_one
+    z = model(x)
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Python313\Lib\site-packages\timm\models\vgg.py", line 256, in forward
+    x = self.forward_head(x)
+  File "C:\Python313\Lib\site-packages\timm\models\vgg.py", line 243, in forward_head
+    x = self.pre_logits(x)
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Python313\Lib\site-packages\timm\models\vgg.py", line 84, in forward
+    x = self.fc1(x)
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\conv.py", line 549, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 196.00 MiB. GPU 0 has a total capacity of 12.00 GiB of which 7.27 GiB is free. Of the allocated memory 3.65 GiB is allocated by PyTorch, and 23.37 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E1 benchmark: models x protocols x seeds
+    cached 2000/3064
+    grouped/calm/s0/f0 0s
+    grouped/calm/s0/f1 0s
+    grouped/calm/s0/f2 0s
+    grouped/calm/s0/f3 0s
+    grouped/calm/s0/f4 0s
+    grouped/calm/s1/f0 0s
+    grouped/calm/s1/f1 0s
+    grouped/calm/s1/f2 0s
+    grouped/calm/s1/f3 0s
+    grouped/calm/s1/f4 0s
+    grouped/calm/s2/f0 0s
+    grouped/calm/s2/f1 0s
+    grouped/calm/s2/f2 0s
+    grouped/calm/s2/f3 0s
+    grouped/calm/s2/f4 0s
+  grouped  calm               acc 0.9275 f1 0.9173 ece 0.0181 aurc 0.0282
+  wrote results/E1_benchmark.json
+    grouped/calm_l/s0/f0 0s
+    grouped/calm_l/s0/f1 0s
+    grouped/calm_l/s0/f2 0s
+    grouped/calm_l/s0/f3 0s
+    grouped/calm_l/s0/f4 0s
+    grouped/calm_l/s1/f0 0s
+    grouped/calm_l/s1/f1 0s
+    grouped/calm_l/s1/f2 0s
+    grouped/calm_l/s1/f3 0s
+    grouped/calm_l/s1/f4 0s
+    grouped/calm_l/s2/f0 0s
+    grouped/calm_l/s2/f1 0s
+    grouped/calm_l/s2/f2 0s
+    grouped/calm_l/s2/f3 0s
+    grouped/calm_l/s2/f4 0s
+  grouped  calm_l             acc 0.9357 f1 0.9284 ece 0.0203 aurc 0.0175
+  wrote results/E1_benchmark.json
+    grouped/efficientnet_b0/s0/f0 0s
+    grouped/efficientnet_b0/s0/f1 0s
+    grouped/efficientnet_b0/s0/f2 0s
+    grouped/efficientnet_b0/s0/f3 0s
+    grouped/efficientnet_b0/s0/f4 0s
+    grouped/efficientnet_b0/s1/f0 0s
+    grouped/efficientnet_b0/s1/f1 0s
+    grouped/efficientnet_b0/s1/f2 0s
+    grouped/efficientnet_b0/s1/f3 0s
+    grouped/efficientnet_b0/s1/f4 0s
+    grouped/efficientnet_b0/s2/f0 0s
+    grouped/efficientnet_b0/s2/f1 0s
+    grouped/efficientnet_b0/s2/f2 0s
+    grouped/efficientnet_b0/s2/f3 0s
+    grouped/efficientnet_b0/s2/f4 0s
+  grouped  efficientnet_b0    acc 0.8908 f1 0.8758 ece 0.0168 aurc 0.0365
+  wrote results/E1_benchmark.json
+    grouped/resnet18/s0/f0 0s
+    grouped/resnet18/s0/f1 0s
+    grouped/resnet18/s0/f2 0s
+    grouped/resnet18/s0/f3 0s
+    grouped/resnet18/s0/f4 0s
+    grouped/resnet18/s1/f0 0s
+    grouped/resnet18/s1/f1 0s
+    grouped/resnet18/s1/f2 0s
+    grouped/resnet18/s1/f3 0s
+    grouped/resnet18/s1/f4 0s
+    grouped/resnet18/s2/f0 0s
+    grouped/resnet18/s2/f1 0s
+    grouped/resnet18/s2/f2 0s
+    grouped/resnet18/s2/f3 0s
+    grouped/resnet18/s2/f4 0s
+  grouped  resnet18           acc 0.9083 f1 0.8939 ece 0.0156 aurc 0.0337
+  wrote results/E1_benchmark.json
+    grouped/mobilenetv3_small/s0/f0 0s
+    grouped/mobilenetv3_small/s0/f1 0s
+    grouped/mobilenetv3_small/s0/f2 0s
+    grouped/mobilenetv3_small/s0/f3 0s
+    grouped/mobilenetv3_small/s0/f4 0s
+    grouped/mobilenetv3_small/s1/f0 0s
+    grouped/mobilenetv3_small/s1/f1 0s
+    grouped/mobilenetv3_small/s1/f2 0s
+    grouped/mobilenetv3_small/s1/f3 0s
+    grouped/mobilenetv3_small/s1/f4 0s
+    grouped/mobilenetv3_small/s2/f0 0s
+    grouped/mobilenetv3_small/s2/f1 0s
+    grouped/mobilenetv3_small/s2/f2 0s
+    grouped/mobilenetv3_small/s2/f3 0s
+    grouped/mobilenetv3_small/s2/f4 0s
+  grouped  mobilenetv3_small  acc 0.9064 f1 0.8923 ece 0.0227 aurc 0.0296
+  wrote results/E1_benchmark.json
+    grouped/convnext_tiny/s0/f0 0s
+    grouped/convnext_tiny/s0/f1 0s
+    grouped/convnext_tiny/s0/f2 0s
+    grouped/convnext_tiny/s0/f3 0s
+    grouped/convnext_tiny/s0/f4 0s
+    grouped/convnext_tiny/s1/f0 0s
+    grouped/convnext_tiny/s1/f1 0s
+    grouped/convnext_tiny/s1/f2 0s
+    grouped/convnext_tiny/s1/f3 0s
+    grouped/convnext_tiny/s1/f4 0s
+    grouped/convnext_tiny/s2/f0 0s
+    grouped/convnext_tiny/s2/f1 0s
+    grouped/convnext_tiny/s2/f2 0s
+    grouped/convnext_tiny/s2/f3 0s
+    grouped/convnext_tiny/s2/f4 0s
+  grouped  convnext_tiny      acc 0.9391 f1 0.9313 ece 0.0216 aurc 0.0229
+  wrote results/E1_benchmark.json
+    grouped/deit_small/s0/f0 0s
+    grouped/deit_small/s0/f1 0s
+    grouped/deit_small/s0/f2 0s
+    grouped/deit_small/s0/f3 0s
+    grouped/deit_small/s0/f4 0s
+    grouped/deit_small/s1/f0 0s
+    grouped/deit_small/s1/f1 0s
+    grouped/deit_small/s1/f2 0s
+    grouped/deit_small/s1/f3 0s
+    grouped/deit_small/s1/f4 0s
+    grouped/deit_small/s2/f0 0s
+    grouped/deit_small/s2/f1 0s
+    grouped/deit_small/s2/f2 0s
+    grouped/deit_small/s2/f3 0s
+    grouped/deit_small/s2/f4 0s
+  grouped  deit_small         acc 0.9343 f1 0.9253 ece 0.0257 aurc 0.0204
+  wrote results/E1_benchmark.json
+    grouped/swin_tiny/s0/f0 0s
+    grouped/swin_tiny/s0/f1 0s
+    grouped/swin_tiny/s0/f2 0s
+    grouped/swin_tiny/s0/f3 0s
+    grouped/swin_tiny/s0/f4 0s
+    grouped/swin_tiny/s1/f0 0s
+    grouped/swin_tiny/s1/f1 0s
+    grouped/swin_tiny/s1/f2 0s
+    grouped/swin_tiny/s1/f3 0s
+    grouped/swin_tiny/s1/f4 0s
+    grouped/swin_tiny/s2/f0 0s
+    grouped/swin_tiny/s2/f1 0s
+    grouped/swin_tiny/s2/f2 0s
+    grouped/swin_tiny/s2/f3 0s
+    grouped/swin_tiny/s2/f4 0s
+  grouped  swin_tiny          acc 0.9341 f1 0.9266 ece 0.0220 aurc 0.0273
+  wrote results/E1_benchmark.json
+    grouped/resnet50/s0/f0 0s
+    grouped/resnet50/s0/f1 0s
+    grouped/resnet50/s0/f2 0s
+    grouped/resnet50/s0/f3 0s
+    grouped/resnet50/s0/f4 0s
+  grouped  resnet50           acc 0.9008 f1 0.8904 ece 0.0244 aurc 0.0380
+  wrote results/E1_benchmark.json
+    grouped/densenet121/s0/f0 0s
+    grouped/densenet121/s0/f1 0s
+    grouped/densenet121/s0/f2 0s
+    grouped/densenet121/s0/f3 0s
+    grouped/densenet121/s0/f4 0s
+  grouped  densenet121        acc 0.9220 f1 0.9137 ece 0.0315 aurc 0.0266
+  wrote results/E1_benchmark.json
+Traceback (most recent call last):
+  File "F:\Yash_AJSE\work\scripts\run_experiments.py", line 607, in <module>
+    main(sys.argv[1:])
+    ~~~~^^^^^^^^^^^^^^
+  File "F:\Yash_AJSE\work\scripts\run_experiments.py", line 602, in main
+    STAGES[s](df)
+    ~~~~~~~~~^^^^
+  File "F:\Yash_AJSE\work\scripts\run_experiments.py", line 252, in stage_bench
+    r = run_fold(mn, ch, tr, te, seed, f"bench_{proto}_{mn}_s{seed}_f{k}")
+  File "F:\Yash_AJSE\work\scripts\run_experiments.py", line 194, in run_fold
+    model, log = T.train_one(model_name, df.iloc[tr2], None, N_CLS, seed=seed,
+                 ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             epochs=epochs or EPOCHS, device=DEV, **(model_kw or {}))
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Yash_AJSE\work\src\train.py", line 164, in train_one
+    z = model(x)
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Python313\Lib\site-packages\timm\models\vgg.py", line 256, in forward
+    x = self.forward_head(x)
+  File "C:\Python313\Lib\site-packages\timm\models\vgg.py", line 243, in forward_head
+    x = self.pre_logits(x)
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Python313\Lib\site-packages\timm\models\vgg.py", line 84, in forward
+    x = self.fc1(x)
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\conv.py", line 549, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 196.00 MiB. GPU 0 has a total capacity of 12.00 GiB of which 7.24 GiB is free. Of the allocated memory 3.65 GiB is allocated by PyTorch, and 57.49 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E1 benchmark: models x protocols x seeds
+    cached 2000/3064
+    grouped/calm/s0/f0 0s
+    grouped/calm/s0/f1 0s
+    grouped/calm/s0/f2 0s
+    grouped/calm/s0/f3 0s
+    grouped/calm/s0/f4 0s
+    grouped/calm/s1/f0 0s
+    grouped/calm/s1/f1 0s
+    grouped/calm/s1/f2 0s
+    grouped/calm/s1/f3 0s
+    grouped/calm/s1/f4 0s
+    grouped/calm/s2/f0 0s
+    grouped/calm/s2/f1 0s
+    grouped/calm/s2/f2 0s
+    grouped/calm/s2/f3 0s
+    grouped/calm/s2/f4 0s
+  grouped  calm               acc 0.9275 f1 0.9173 ece 0.0181 aurc 0.0282
+  wrote results/E1_benchmark.json
+    grouped/calm_l/s0/f0 0s
+    grouped/calm_l/s0/f1 0s
+    grouped/calm_l/s0/f2 0s
+    grouped/calm_l/s0/f3 0s
+    grouped/calm_l/s0/f4 0s
+    grouped/calm_l/s1/f0 0s
+    grouped/calm_l/s1/f1 0s
+    grouped/calm_l/s1/f2 0s
+    grouped/calm_l/s1/f3 0s
+    grouped/calm_l/s1/f4 0s
+    grouped/calm_l/s2/f0 0s
+    grouped/calm_l/s2/f1 0s
+    grouped/calm_l/s2/f2 0s
+    grouped/calm_l/s2/f3 0s
+    grouped/calm_l/s2/f4 0s
+  grouped  calm_l             acc 0.9357 f1 0.9284 ece 0.0203 aurc 0.0175
+  wrote results/E1_benchmark.json
+    grouped/efficientnet_b0/s0/f0 0s
+    grouped/efficientnet_b0/s0/f1 0s
+    grouped/efficientnet_b0/s0/f2 0s
+    grouped/efficientnet_b0/s0/f3 0s
+    grouped/efficientnet_b0/s0/f4 0s
+    grouped/efficientnet_b0/s1/f0 0s
+    grouped/efficientnet_b0/s1/f1 0s
+    grouped/efficientnet_b0/s1/f2 0s
+    grouped/efficientnet_b0/s1/f3 0s
+    grouped/efficientnet_b0/s1/f4 0s
+    grouped/efficientnet_b0/s2/f0 0s
+    grouped/efficientnet_b0/s2/f1 0s
+    grouped/efficientnet_b0/s2/f2 0s
+    grouped/efficientnet_b0/s2/f3 0s
+    grouped/efficientnet_b0/s2/f4 0s
+  grouped  efficientnet_b0    acc 0.8908 f1 0.8758 ece 0.0168 aurc 0.0365
+  wrote results/E1_benchmark.json
+    grouped/resnet18/s0/f0 0s
+    grouped/resnet18/s0/f1 0s
+    grouped/resnet18/s0/f2 0s
+    grouped/resnet18/s0/f3 0s
+    grouped/resnet18/s0/f4 0s
+    grouped/resnet18/s1/f0 0s
+    grouped/resnet18/s1/f1 0s
+    grouped/resnet18/s1/f2 0s
+    grouped/resnet18/s1/f3 0s
+    grouped/resnet18/s1/f4 0s
+    grouped/resnet18/s2/f0 0s
+    grouped/resnet18/s2/f1 0s
+    grouped/resnet18/s2/f2 0s
+    grouped/resnet18/s2/f3 0s
+    grouped/resnet18/s2/f4 0s
+  grouped  resnet18           acc 0.9083 f1 0.8939 ece 0.0156 aurc 0.0337
+  wrote results/E1_benchmark.json
+    grouped/mobilenetv3_small/s0/f0 0s
+    grouped/mobilenetv3_small/s0/f1 0s
+    grouped/mobilenetv3_small/s0/f2 0s
+    grouped/mobilenetv3_small/s0/f3 0s
+    grouped/mobilenetv3_small/s0/f4 0s
+    grouped/mobilenetv3_small/s1/f0 0s
+    grouped/mobilenetv3_small/s1/f1 0s
+    grouped/mobilenetv3_small/s1/f2 0s
+    grouped/mobilenetv3_small/s1/f3 0s
+    grouped/mobilenetv3_small/s1/f4 0s
+    grouped/mobilenetv3_small/s2/f0 0s
+    grouped/mobilenetv3_small/s2/f1 0s
+    grouped/mobilenetv3_small/s2/f2 0s
+    grouped/mobilenetv3_small/s2/f3 0s
+    grouped/mobilenetv3_small/s2/f4 0s
+  grouped  mobilenetv3_small  acc 0.9064 f1 0.8923 ece 0.0227 aurc 0.0296
+  wrote results/E1_benchmark.json
+    grouped/convnext_tiny/s0/f0 0s
+    grouped/convnext_tiny/s0/f1 0s
+    grouped/convnext_tiny/s0/f2 0s
+    grouped/convnext_tiny/s0/f3 0s
+    grouped/convnext_tiny/s0/f4 0s
+    grouped/convnext_tiny/s1/f0 0s
+    grouped/convnext_tiny/s1/f1 0s
+    grouped/convnext_tiny/s1/f2 0s
+    grouped/convnext_tiny/s1/f3 0s
+    grouped/convnext_tiny/s1/f4 0s
+    grouped/convnext_tiny/s2/f0 0s
+    grouped/convnext_tiny/s2/f1 0s
+    grouped/convnext_tiny/s2/f2 0s
+    grouped/convnext_tiny/s2/f3 0s
+    grouped/convnext_tiny/s2/f4 0s
+  grouped  convnext_tiny      acc 0.9391 f1 0.9313 ece 0.0216 aurc 0.0229
+  wrote results/E1_benchmark.json
+    grouped/deit_small/s0/f0 0s
+    grouped/deit_small/s0/f1 0s
+    grouped/deit_small/s0/f2 0s
+    grouped/deit_small/s0/f3 0s
+    grouped/deit_small/s0/f4 0s
+    grouped/deit_small/s1/f0 0s
+    grouped/deit_small/s1/f1 0s
+    grouped/deit_small/s1/f2 0s
+    grouped/deit_small/s1/f3 0s
+    grouped/deit_small/s1/f4 0s
+    grouped/deit_small/s2/f0 0s
+    grouped/deit_small/s2/f1 0s
+    grouped/deit_small/s2/f2 0s
+    grouped/deit_small/s2/f3 0s
+    grouped/deit_small/s2/f4 0s
+  grouped  deit_small         acc 0.9343 f1 0.9253 ece 0.0257 aurc 0.0204
+  wrote results/E1_benchmark.json
+    grouped/swin_tiny/s0/f0 0s
+    grouped/swin_tiny/s0/f1 0s
+    grouped/swin_tiny/s0/f2 0s
+    grouped/swin_tiny/s0/f3 0s
+    grouped/swin_tiny/s0/f4 0s
+    grouped/swin_tiny/s1/f0 0s
+    grouped/swin_tiny/s1/f1 0s
+    grouped/swin_tiny/s1/f2 0s
+    grouped/swin_tiny/s1/f3 0s
+    grouped/swin_tiny/s1/f4 0s
+    grouped/swin_tiny/s2/f0 0s
+    grouped/swin_tiny/s2/f1 0s
+    grouped/swin_tiny/s2/f2 0s
+    grouped/swin_tiny/s2/f3 0s
+    grouped/swin_tiny/s2/f4 0s
+  grouped  swin_tiny          acc 0.9341 f1 0.9266 ece 0.0220 aurc 0.0273
+  wrote results/E1_benchmark.json
+    grouped/resnet50/s0/f0 0s
+    grouped/resnet50/s0/f1 0s
+    grouped/resnet50/s0/f2 0s
+    grouped/resnet50/s0/f3 0s
+    grouped/resnet50/s0/f4 0s
+  grouped  resnet50           acc 0.9008 f1 0.8904 ece 0.0244 aurc 0.0380
+  wrote results/E1_benchmark.json
+    grouped/densenet121/s0/f0 0s
+    grouped/densenet121/s0/f1 0s
+    grouped/densenet121/s0/f2 0s
+    grouped/densenet121/s0/f3 0s
+    grouped/densenet121/s0/f4 0s
+  grouped  densenet121        acc 0.9220 f1 0.9137 ece 0.0315 aurc 0.0266
+  wrote results/E1_benchmark.json
+Traceback (most recent call last):
+  File "F:\Yash_AJSE\work\scripts\run_experiments.py", line 607, in <module>
+    main(sys.argv[1:])
+    ~~~~^^^^^^^^^^^^^^
+  File "F:\Yash_AJSE\work\scripts\run_experiments.py", line 602, in main
+    STAGES[s](df)
+    ~~~~~~~~~^^^^
+  File "F:\Yash_AJSE\work\scripts\run_experiments.py", line 252, in stage_bench
+    r = run_fold(mn, ch, tr, te, seed, f"bench_{proto}_{mn}_s{seed}_f{k}")
+  File "F:\Yash_AJSE\work\scripts\run_experiments.py", line 194, in run_fold
+    model, log = T.train_one(model_name, df.iloc[tr2], None, N_CLS, seed=seed,
+                 ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             epochs=epochs or EPOCHS, device=DEV, **(model_kw or {}))
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Yash_AJSE\work\src\train.py", line 164, in train_one
+    z = model(x)
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Python313\Lib\site-packages\timm\models\vgg.py", line 256, in forward
+    x = self.forward_head(x)
+  File "C:\Python313\Lib\site-packages\timm\models\vgg.py", line 243, in forward_head
+    x = self.pre_logits(x)
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Python313\Lib\site-packages\timm\models\vgg.py", line 84, in forward
+    x = self.fc1(x)
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\site-packages\torch\nn\modules\conv.py", line 549, in _conv_forward
+    return F.conv2d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 196.00 MiB. GPU 0 has a total capacity of 12.00 GiB of which 7.24 GiB is free. Of the allocated memory 3.65 GiB is allocated by PyTorch, and 57.49 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E4 cross-cohort OOD (train on Cheng, patient-grouped)
+    cached 2000/3064
+    cached 2000/2764
+  sartaj: 2764 slices
+    cached 2000/5023
+    cached 4000/5023
+  hemg: 5023 slices
+  pmram: 1109 slices
+    final seed0 done
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E5 ablations around the final model
+    cached 2000/3064
+  full               acc 0.9490 f1 0.9420 ece 0.0168
+  wrote results/E5_ablation.json
+  single_member      acc 0.9475 f1 0.9408 ece 0.0160
+  wrote results/E5_ablation.json
+  gated_fusion       acc 0.9377 f1 0.9300 ece 0.0199
+  wrote results/E5_ablation.json
+  compact_trunk      acc 0.9275 f1 0.9173 ece 0.0181
+  wrote results/E5_ablation.json
+  no_fusion_head     acc 0.9391 f1 0.9313 ece 0.0216
+  wrote results/E5_ablation.json
+  fusion_last        acc 0.9399 f1 0.9321 ece 0.0197
+  wrote results/E5_ablation.json
+  two_scales         acc 0.9436 f1 0.9368 ece 0.0178
+  wrote results/E5_ablation.json
+  wrote results/E5_ablation.json
+[abl] done in 49.9 min
+
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E1 benchmark: models x protocols x seeds
+    cached 2000/3064
+    grouped/calm/s0/f0 0s
+    grouped/calm/s0/f1 0s
+    grouped/calm/s0/f2 0s
+    grouped/calm/s0/f3 0s
+    grouped/calm/s0/f4 0s
+    grouped/calm/s1/f0 0s
+    grouped/calm/s1/f1 0s
+    grouped/calm/s1/f2 0s
+    grouped/calm/s1/f3 0s
+    grouped/calm/s1/f4 0s
+    grouped/calm/s2/f0 0s
+    grouped/calm/s2/f1 0s
+    grouped/calm/s2/f2 0s
+    grouped/calm/s2/f3 0s
+    grouped/calm/s2/f4 0s
+  grouped  calm               acc 0.9275 f1 0.9173 ece 0.0181 aurc 0.0282
+  wrote results/E1_benchmark.json
+    grouped/calm_l/s0/f0 0s
+    grouped/calm_l/s0/f1 0s
+    grouped/calm_l/s0/f2 0s
+    grouped/calm_l/s0/f3 0s
+    grouped/calm_l/s0/f4 0s
+    grouped/calm_l/s1/f0 0s
+    grouped/calm_l/s1/f1 0s
+    grouped/calm_l/s1/f2 0s
+    grouped/calm_l/s1/f3 0s
+    grouped/calm_l/s1/f4 0s
+    grouped/calm_l/s2/f0 0s
+    grouped/calm_l/s2/f1 0s
+    grouped/calm_l/s2/f2 0s
+    grouped/calm_l/s2/f3 0s
+    grouped/calm_l/s2/f4 0s
+  grouped  calm_l             acc 0.9357 f1 0.9284 ece 0.0203 aurc 0.0175
+  wrote results/E1_benchmark.json
+    grouped/efficientnet_b0/s0/f0 0s
+    grouped/efficientnet_b0/s0/f1 0s
+    grouped/efficientnet_b0/s0/f2 0s
+    grouped/efficientnet_b0/s0/f3 0s
+    grouped/efficientnet_b0/s0/f4 0s
+    grouped/efficientnet_b0/s1/f0 0s
+    grouped/efficientnet_b0/s1/f1 0s
+    grouped/efficientnet_b0/s1/f2 0s
+    grouped/efficientnet_b0/s1/f3 0s
+    grouped/efficientnet_b0/s1/f4 0s
+    grouped/efficientnet_b0/s2/f0 0s
+    grouped/efficientnet_b0/s2/f1 0s
+    grouped/efficientnet_b0/s2/f2 0s
+    grouped/efficientnet_b0/s2/f3 0s
+    grouped/efficientnet_b0/s2/f4 0s
+  grouped  efficientnet_b0    acc 0.8908 f1 0.8758 ece 0.0168 aurc 0.0365
+  wrote results/E1_benchmark.json
+    grouped/resnet18/s0/f0 0s
+    grouped/resnet18/s0/f1 0s
+    grouped/resnet18/s0/f2 0s
+    grouped/resnet18/s0/f3 0s
+    grouped/resnet18/s0/f4 0s
+    grouped/resnet18/s1/f0 0s
+    grouped/resnet18/s1/f1 0s
+    grouped/resnet18/s1/f2 0s
+    grouped/resnet18/s1/f3 0s
+    grouped/resnet18/s1/f4 0s
+    grouped/resnet18/s2/f0 0s
+    grouped/resnet18/s2/f1 0s
+    grouped/resnet18/s2/f2 0s
+    grouped/resnet18/s2/f3 0s
+    grouped/resnet18/s2/f4 0s
+  grouped  resnet18           acc 0.9083 f1 0.8939 ece 0.0156 aurc 0.0337
+  wrote results/E1_benchmark.json
+    grouped/mobilenetv3_small/s0/f0 0s
+    grouped/mobilenetv3_small/s0/f1 0s
+    grouped/mobilenetv3_small/s0/f2 0s
+    grouped/mobilenetv3_small/s0/f3 0s
+    grouped/mobilenetv3_small/s0/f4 0s
+    grouped/mobilenetv3_small/s1/f0 0s
+    grouped/mobilenetv3_small/s1/f1 0s
+    grouped/mobilenetv3_small/s1/f2 0s
+    grouped/mobilenetv3_small/s1/f3 0s
+    grouped/mobilenetv3_small/s1/f4 0s
+    grouped/mobilenetv3_small/s2/f0 0s
+    grouped/mobilenetv3_small/s2/f1 0s
+    grouped/mobilenetv3_small/s2/f2 0s
+    grouped/mobilenetv3_small/s2/f3 0s
+    grouped/mobilenetv3_small/s2/f4 0s
+  grouped  mobilenetv3_small  acc 0.9064 f1 0.8923 ece 0.0227 aurc 0.0296
+  wrote results/E1_benchmark.json
+    grouped/convnext_tiny/s0/f0 0s
+    grouped/convnext_tiny/s0/f1 0s
+    grouped/convnext_tiny/s0/f2 0s
+    grouped/convnext_tiny/s0/f3 0s
+    grouped/convnext_tiny/s0/f4 0s
+    grouped/convnext_tiny/s1/f0 0s
+    grouped/convnext_tiny/s1/f1 0s
+    grouped/convnext_tiny/s1/f2 0s
+    grouped/convnext_tiny/s1/f3 0s
+    grouped/convnext_tiny/s1/f4 0s
+    grouped/convnext_tiny/s2/f0 0s
+    grouped/convnext_tiny/s2/f1 0s
+    grouped/convnext_tiny/s2/f2 0s
+    grouped/convnext_tiny/s2/f3 0s
+    grouped/convnext_tiny/s2/f4 0s
+  grouped  convnext_tiny      acc 0.9391 f1 0.9313 ece 0.0216 aurc 0.0229
+  wrote results/E1_benchmark.json
+    grouped/deit_small/s0/f0 0s
+    grouped/deit_small/s0/f1 0s
+    grouped/deit_small/s0/f2 0s
+    grouped/deit_small/s0/f3 0s
+    grouped/deit_small/s0/f4 0s
+    grouped/deit_small/s1/f0 0s
+    grouped/deit_small/s1/f1 0s
+    grouped/deit_small/s1/f2 0s
+    grouped/deit_small/s1/f3 0s
+    grouped/deit_small/s1/f4 0s
+    grouped/deit_small/s2/f0 0s
+    grouped/deit_small/s2/f1 0s
+    grouped/deit_small/s2/f2 0s
+    grouped/deit_small/s2/f3 0s
+    grouped/deit_small/s2/f4 0s
+  grouped  deit_small         acc 0.9343 f1 0.9253 ece 0.0257 aurc 0.0204
+  wrote results/E1_benchmark.json
+    grouped/swin_tiny/s0/f0 0s
+    grouped/swin_tiny/s0/f1 0s
+    grouped/swin_tiny/s0/f2 0s
+    grouped/swin_tiny/s0/f3 0s
+    grouped/swin_tiny/s0/f4 0s
+    grouped/swin_tiny/s1/f0 0s
+    grouped/swin_tiny/s1/f1 0s
+    grouped/swin_tiny/s1/f2 0s
+    grouped/swin_tiny/s1/f3 0s
+    grouped/swin_tiny/s1/f4 0s
+    grouped/swin_tiny/s2/f0 0s
+    grouped/swin_tiny/s2/f1 0s
+    grouped/swin_tiny/s2/f2 0s
+    grouped/swin_tiny/s2/f3 0s
+    grouped/swin_tiny/s2/f4 0s
+  grouped  swin_tiny          acc 0.9341 f1 0.9266 ece 0.0220 aurc 0.0273
+  wrote results/E1_benchmark.json
+    grouped/resnet50/s0/f0 0s
+    grouped/resnet50/s0/f1 0s
+    grouped/resnet50/s0/f2 0s
+    grouped/resnet50/s0/f3 0s
+    grouped/resnet50/s0/f4 0s
+  grouped  resnet50           acc 0.9008 f1 0.8904 ece 0.0244 aurc 0.0380
+  wrote results/E1_benchmark.json
+    grouped/densenet121/s0/f0 0s
+    grouped/densenet121/s0/f1 0s
+    grouped/densenet121/s0/f2 0s
+    grouped/densenet121/s0/f3 0s
+    grouped/densenet121/s0/f4 0s
+  grouped  densenet121        acc 0.9220 f1 0.9137 ece 0.0315 aurc 0.0266
+  wrote results/E1_benchmark.json
+    grouped/vgg16/s0/f0 296s
+    grouped/vgg16/s0/f1 286s
+    grouped/vgg16/s0/f2 289s
+    grouped/vgg16/s0/f3 294s
+    grouped/vgg16/s0/f4 285s
+  grouped  vgg16              acc 0.9272 f1 0.9188 ece 0.0433 aurc 0.0329
+  wrote results/E1_benchmark.json
+Downloading: "https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-cadene/xception-43020ad28.pth" to C:\Users\pc/.cache\torch\hub\checkpoints\xception-43020ad28.pth
+    grouped/xception/s0/f0 238s
+    grouped/xception/s0/f1 153s
+    grouped/xception/s0/f2 155s
+    grouped/xception/s0/f3 158s
+    grouped/xception/s0/f4 153s
+  grouped  xception           acc 0.9272 f1 0.9190 ece 0.0349 aurc 0.0304
+C:\Python313\Lib\site-packages\huggingface_hub\file_download.py:143: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\pc\.cache\huggingface\hub\models--timm--inception_v3.tv_in1k. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+  wrote results/E1_benchmark.json
+    grouped/inception_v3/s0/f0 197s
+    grouped/inception_v3/s0/f1 104s
+    grouped/inception_v3/s0/f2 106s
+    grouped/inception_v3/s0/f3 108s
+    grouped/inception_v3/s0/f4 104s
+  grouped  inception_v3       acc 0.9236 f1 0.9126 ece 0.0309 aurc 0.0279
+C:\Python313\Lib\site-packages\huggingface_hub\file_download.py:143: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\pc\.cache\huggingface\hub\models--timm--mobilenetv2_100.ra_in1k. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+  wrote results/E1_benchmark.json
+    grouped/mobilenetv2/s0/f0 77s
+    grouped/mobilenetv2/s0/f1 59s
+    grouped/mobilenetv2/s0/f2 61s
+    grouped/mobilenetv2/s0/f3 62s
+    grouped/mobilenetv2/s0/f4 60s
+  grouped  mobilenetv2        acc 0.8610 f1 0.8427 ece 0.0259 aurc 0.0504
+  wrote results/E1_benchmark.json
+    slice/calm/s0/f0 0s
+    slice/calm/s0/f1 0s
+    slice/calm/s0/f2 0s
+    slice/calm/s0/f3 0s
+    slice/calm/s0/f4 0s
+    slice/calm/s1/f0 0s
+    slice/calm/s1/f1 0s
+    slice/calm/s1/f2 0s
+    slice/calm/s1/f3 0s
+    slice/calm/s1/f4 0s
+    slice/calm/s2/f0 0s
+    slice/calm/s2/f1 0s
+    slice/calm/s2/f2 0s
+    slice/calm/s2/f3 0s
+    slice/calm/s2/f4 0s
+  slice    calm               acc 0.9699 f1 0.9652 ece 0.0102 aurc 0.0053
+  wrote results/E1_benchmark.json
+    slice/efficientnet_b0/s0/f0 0s
+    slice/efficientnet_b0/s0/f1 0s
+    slice/efficientnet_b0/s0/f2 0s
+    slice/efficientnet_b0/s0/f3 0s
+    slice/efficientnet_b0/s0/f4 0s
+    slice/efficientnet_b0/s1/f0 0s
+    slice/efficientnet_b0/s1/f1 0s
+    slice/efficientnet_b0/s1/f2 0s
+    slice/efficientnet_b0/s1/f3 0s
+    slice/efficientnet_b0/s1/f4 0s
+    slice/efficientnet_b0/s2/f0 0s
+    slice/efficientnet_b0/s2/f1 0s
+    slice/efficientnet_b0/s2/f2 0s
+    slice/efficientnet_b0/s2/f3 0s
+    slice/efficientnet_b0/s2/f4 0s
+  slice    efficientnet_b0    acc 0.9450 f1 0.9369 ece 0.0151 aurc 0.0093
+  wrote results/E1_benchmark.json
+    slice/resnet18/s0/f0 0s
+    slice/resnet18/s0/f1 0s
+    slice/resnet18/s0/f2 0s
+    slice/resnet18/s0/f3 0s
+    slice/resnet18/s0/f4 0s
+    slice/resnet18/s1/f0 0s
+    slice/resnet18/s1/f1 0s
+    slice/resnet18/s1/f2 0s
+    slice/resnet18/s1/f3 0s
+    slice/resnet18/s1/f4 0s
+    slice/resnet18/s2/f0 0s
+    slice/resnet18/s2/f1 0s
+    slice/resnet18/s2/f2 0s
+    slice/resnet18/s2/f3 0s
+    slice/resnet18/s2/f4 0s
+  slice    resnet18           acc 0.9407 f1 0.9304 ece 0.0131 aurc 0.0102
+  wrote results/E1_benchmark.json
+    slice/mobilenetv3_small/s0/f0 0s
+    slice/mobilenetv3_small/s0/f1 0s
+    slice/mobilenetv3_small/s0/f2 0s
+    slice/mobilenetv3_small/s0/f3 0s
+    slice/mobilenetv3_small/s0/f4 0s
+    slice/mobilenetv3_small/s1/f0 0s
+    slice/mobilenetv3_small/s1/f1 0s
+    slice/mobilenetv3_small/s1/f2 0s
+    slice/mobilenetv3_small/s1/f3 0s
+    slice/mobilenetv3_small/s1/f4 0s
+    slice/mobilenetv3_small/s2/f0 0s
+    slice/mobilenetv3_small/s2/f1 0s
+    slice/mobilenetv3_small/s2/f2 0s
+    slice/mobilenetv3_small/s2/f3 0s
+    slice/mobilenetv3_small/s2/f4 0s
+  slice    mobilenetv3_small  acc 0.9510 f1 0.9435 ece 0.0116 aurc 0.0068
+  wrote results/E1_benchmark.json
+    slice/convnext_tiny/s0/f0 0s
+    slice/convnext_tiny/s0/f1 0s
+    slice/convnext_tiny/s0/f2 0s
+    slice/convnext_tiny/s0/f3 0s
+    slice/convnext_tiny/s0/f4 0s
+    slice/convnext_tiny/s1/f0 0s
+    slice/convnext_tiny/s1/f1 0s
+    slice/convnext_tiny/s1/f2 0s
+    slice/convnext_tiny/s1/f3 0s
+    slice/convnext_tiny/s1/f4 0s
+    slice/convnext_tiny/s2/f0 0s
+    slice/convnext_tiny/s2/f1 0s
+    slice/convnext_tiny/s2/f2 0s
+    slice/convnext_tiny/s2/f3 0s
+    slice/convnext_tiny/s2/f4 0s
+  slice    convnext_tiny      acc 0.9751 f1 0.9719 ece 0.0140 aurc 0.0032
+  wrote results/E1_benchmark.json
+    slice/deit_small/s0/f0 0s
+    slice/deit_small/s0/f1 0s
+    slice/deit_small/s0/f2 0s
+    slice/deit_small/s0/f3 0s
+    slice/deit_small/s0/f4 0s
+    slice/deit_small/s1/f0 0s
+    slice/deit_small/s1/f1 0s
+    slice/deit_small/s1/f2 0s
+    slice/deit_small/s1/f3 0s
+    slice/deit_small/s1/f4 0s
+    slice/deit_small/s2/f0 0s
+    slice/deit_small/s2/f1 0s
+    slice/deit_small/s2/f2 0s
+    slice/deit_small/s2/f3 0s
+    slice/deit_small/s2/f4 0s
+  slice    deit_small         acc 0.9678 f1 0.9630 ece 0.0152 aurc 0.0066
+  wrote results/E1_benchmark.json
+    slice/swin_tiny/s0/f0 0s
+    slice/swin_tiny/s0/f1 0s
+    slice/swin_tiny/s0/f2 0s
+    slice/swin_tiny/s0/f3 0s
+    slice/swin_tiny/s0/f4 0s
+    slice/swin_tiny/s1/f0 0s
+    slice/swin_tiny/s1/f1 0s
+    slice/swin_tiny/s1/f2 0s
+    slice/swin_tiny/s1/f3 0s
+    slice/swin_tiny/s1/f4 0s
+    slice/swin_tiny/s2/f0 0s
+    slice/swin_tiny/s2/f1 0s
+    slice/swin_tiny/s2/f2 0s
+    slice/swin_tiny/s2/f3 0s
+    slice/swin_tiny/s2/f4 0s
+  slice    swin_tiny          acc 0.9686 f1 0.9646 ece 0.0176 aurc 0.0074
+  wrote results/E1_benchmark.json
+  wrote results/E1_benchmark.json
+[bench] done in 54.5 min
+
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E4 cross-cohort OOD (train on Cheng, patient-grouped)
+    cached 2000/3064
+    cached 2000/2764
+  sartaj: 2764 slices
+    cached 2000/5023
+    cached 4000/5023
+  hemg: 5023 slices
+  pmram: 1109 slices
+    final seed0 done
+    final seed1 done
+    final seed2 done
+  final sartaj_all: acc 0.8904 ece 0.0264
+  final hemg_all: acc 0.9180 ece 0.0157
+  final pmram_all: acc 0.8335 ece 0.0609
+  wrote results/E4_ood.json
+    convnext_tiny seed0 done
+    convnext_tiny seed1 done
+    convnext_tiny seed2 done
+  convnext_tiny sartaj_all: acc 0.9100 ece 0.0402
+  convnext_tiny hemg_all: acc 0.9361 ece 0.0242
+  convnext_tiny pmram_all: acc 0.8650 ece 0.0588
+  wrote results/E4_ood.json
+    swin_tiny seed0 done
+    swin_tiny seed1 done
+    swin_tiny seed2 done
+  swin_tiny sartaj_all: acc 0.8677 ece 0.0587
+  swin_tiny hemg_all: acc 0.9000 ece 0.0405
+  swin_tiny pmram_all: acc 0.8539 ece 0.0623
+  wrote results/E4_ood.json
+    deit_small seed0 done
+    deit_small seed1 done
+    deit_small seed2 done
+  deit_small sartaj_all: acc 0.8767 ece 0.0594
+  deit_small hemg_all: acc 0.9036 ece 0.0448
+  deit_small pmram_all: acc 0.8566 ece 0.0704
+  wrote results/E4_ood.json
+    efficientnet_b0 seed0 done
+    efficientnet_b0 seed1 done
+    efficientnet_b0 seed2 done
+  efficientnet_b0 sartaj_all: acc 0.6563 ece 0.1656
+  efficientnet_b0 hemg_all: acc 0.6922 ece 0.1379
+  efficientnet_b0 pmram_all: acc 0.5951 ece 0.2459
+  wrote results/E4_ood.json
+  wrote results/E4_ood.json
+[ood] done in 62.0 min
+
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E4b contaminated external validation (train hemg)
+    cached 2000/5023
+    cached 4000/5023
+    cached 2000/2764
+  sartaj: 2764 -> 769 after removing 1995 confirmed duplicates of hemg
+  pmram: 1109 -> 525 after removing 584 confirmed duplicates of hemg
+    final seed0 done
+    final seed1 done
+    final seed2 done
+  final -> sartaj: as-published 97.71% vs decontaminated 92.33% (inflation +5.38 pts)
+  final -> pmram: as-published 98.80% vs decontaminated 97.65% (inflation +1.15 pts)
+  wrote results/E4b_contamination.json
+    efficientnet_b0 seed0 done
+    efficientnet_b0 seed1 done
+    efficientnet_b0 seed2 done
+  efficientnet_b0 -> sartaj: as-published 96.99% vs decontaminated 90.38% (inflation +6.61 pts)
+  efficientnet_b0 -> pmram: as-published 95.25% vs decontaminated 90.03% (inflation +5.22 pts)
+  wrote results/E4b_contamination.json
+  wrote results/E4b_contamination.json
+[contam] done in 30.4 min
+
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E9 Grad-CAM + faithfulness
+    cached 2000/3064
+  final              del 0.5357 ins 0.8334 rand-del 0.6925
+  convnext_tiny      del 0.7138 ins 0.7411 rand-del 0.7345
+  swin_tiny          del 0.5763 ins 0.6032 rand-del 0.6609
+  wrote results/E9_xai.json
+[xai] done in 10.1 min
+
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E7 patient-grouped learning curves
+    cached 2000/3064
+  final  10%  acc 0.7064
+  wrote results/E7_dataeff.json
+  final  25%  acc 0.8641
+  wrote results/E7_dataeff.json
+  final  50%  acc 0.9168
+  wrote results/E7_dataeff.json
+  final 100%  acc 0.9413
+  wrote results/E7_dataeff.json
+  convnext_tiny  10%  acc 0.8564
+  wrote results/E7_dataeff.json
+  convnext_tiny  25%  acc 0.8972
+  wrote results/E7_dataeff.json
+  convnext_tiny  50%  acc 0.9282
+  wrote results/E7_dataeff.json
+  convnext_tiny 100%  acc 0.9320
+  wrote results/E7_dataeff.json
+  wrote results/E7_dataeff.json
+[dataeff] done in 30.0 min
+
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E6 efficiency
+  calm               3.75M  0.36 GFLOPs  6.33 ms  873 img/s
+  calm_l             28.25M  4.46 GFLOPs  4.33 ms  453 img/s
+  efficientnet_b0    4.01M  0.38 GFLOPs  5.48 ms  1246 img/s
+  resnet18           11.18M  1.82 GFLOPs  1.57 ms  1647 img/s
+  mobilenetv3_small  1.52M  0.06 GFLOPs  3.55 ms  3758 img/s
+  convnext_tiny      27.82M  4.45 GFLOPs  4.22 ms  452 img/s
+  deit_small         21.67M  4.24 GFLOPs  3.71 ms  521 img/s
+  swin_tiny          27.52M  4.37 GFLOPs  7.87 ms  352 img/s
+  resnet50           23.51M  4.13 GFLOPs  4.04 ms  572 img/s
+  densenet121        6.96M  2.83 GFLOPs  11.12 ms  522 img/s
+  vgg16              134.28M  15.52 GFLOPs  8.90 ms  247 img/s
+  xception           20.81M  4.60 GFLOPs  3.49 ms  441 img/s
+  inception_v3       21.79M  2.84 GFLOPs  8.30 ms  791 img/s
+  mobilenetv2        2.23M  0.30 GFLOPs  3.43 ms  1549 img/s
+  wrote results/E6_efficiency.json
+[eff] done in 0.3 min
+

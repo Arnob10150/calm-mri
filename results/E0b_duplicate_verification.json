@@ -1,0 +1,38 @@
+[
+ {
+  "pair": "hemg|pmram",
+  "n_pairs_total": 969,
+  "n_checked": 300,
+  "matched_corr_median": 0.99996417760849,
+  "matched_corr_p10": 0.7710310101509095,
+  "matched_share_corr_ge_0.95": 0.6433333333333333,
+  "matched_mad_median": 0.00047743056042521604,
+  "control_corr_median": 0.38893094658851624,
+  "control_corr_p90": 0.5461096823215486,
+  "control_share_corr_ge_0.95": 0.0
+ },
+ {
+  "pair": "hemg|sartaj",
+  "n_pairs_total": 3520,
+  "n_checked": 300,
+  "matched_corr_median": 1.0,
+  "matched_corr_p10": 0.7923728108406067,
+  "matched_share_corr_ge_0.95": 0.6733333333333333,
+  "matched_mad_median": 0.0,
+  "control_corr_median": 0.4224078506231308,
+  "control_corr_p90": 0.5602812886238099,
+  "control_share_corr_ge_0.95": 0.0
+ },
+ {
+  "pair": "pmram|sartaj",
+  "n_pairs_total": 467,
+  "n_checked": 300,
+  "matched_corr_median": 0.999949723482132,
+  "matched_corr_p10": 0.7465897798538208,
+  "matched_share_corr_ge_0.95": 0.58,
+  "matched_mad_median": 0.0005123229587779325,
+  "control_corr_median": 0.38075047731399536,
+  "control_corr_p90": 0.5591631829738617,
+  "control_share_corr_ge_0.95": 0.0
+ }
+]

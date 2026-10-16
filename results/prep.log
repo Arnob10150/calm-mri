@@ -1,0 +1,58 @@
+unzipping...
+  p1.zip: 766 mats
+  p2.zip: 766 mats
+  p3.zip: 766 mats
+  p4.zip: 766 mats
+3064 slices
+  500/3064
+  1000/3064
+  1500/3064
+  2000/3064
+  2500/3064
+  3000/3064
+wrote F:\Yash_AJSE\work\data\processed\cheng_manifest.csv: 3064 slices, 233 patients
+  meningioma: 708 slices, 82 patients
+  glioma: 1426 slices, 89 patients
+  pituitary: 930 slices, 62 patients
+  cheng: 3064 images
+sartaj...
+  sartaj: 2764 images
+hemg...
+Traceback (most recent call last):
+  File "F:\Yash_AJSE\work\scripts\prepare_external.py", line 108, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "F:\Yash_AJSE\work\scripts\prepare_external.py", line 100, in main
+    rows += prep_hemg()
+            ~~~~~~~~~^^
+  File "F:\Yash_AJSE\work\scripts\prepare_external.py", line 59, in prep_hemg
+    df = pd.read_parquet(p)
+  File "C:\Python313\Lib\site-packages\pandas\io\parquet.py", line 669, in read_parquet
+    return impl.read(
+           ~~~~~~~~~^
+        path,
+        ^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Python313\Lib\site-packages\pandas\io\parquet.py", line 265, in read
+    pa_table = self.api.parquet.read_table(
+        path_or_handle,
+    ...<3 lines>...
+        **kwargs,
+    )
+  File "C:\Python313\Lib\site-packages\pyarrow\parquet\core.py", line 1891, in read_table
+    dataset = ParquetDataset(
+        source,
+    ...<16 lines>...
+        arrow_extensions_enabled=arrow_extensions_enabled,
+    )
+  File "C:\Python313\Lib\site-packages\pyarrow\parquet\core.py", line 1460, in __init__
+    [fragment], schema=schema or fragment.physical_schema,
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/_dataset.pyx", line 1477, in pyarrow._dataset.Fragment.physical_schema.__get__
+  File "pyarrow/error.pxi", line 155, in pyarrow.lib.pyarrow_internal_check_status
+  File "pyarrow/error.pxi", line 92, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: Could not open Parquet input source '<Buffer>': Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.

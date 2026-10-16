@@ -1,0 +1,25 @@
+manifest: 11960 slices across 4 cohorts | device cuda
+
+E0 cohort + duplicate audit
+  cheng: 3064 slices, 233 patients
+  hemg: 5023 slices
+  pmram: 1109 slices
+  sartaj: 2764 slices
+  hashing...
+    cheng hashed
+    hemg hashed
+    pmram hashed
+    sartaj hashed
+    cheng: 0 exact, 420 near pairs (73 cross-patient)
+    hemg: 132 exact, 1476 near pairs (0 cross-patient)
+    pmram: 40 exact, 118 near pairs (0 cross-patient)
+    sartaj: 221 exact, 777 near pairs (0 cross-patient)
+    cheng vs hemg: 0 near pairs, 0.0% of hemg matched
+    cheng vs pmram: 0 near pairs, 0.0% of pmram matched
+    cheng vs sartaj: 0 near pairs, 0.0% of sartaj matched
+    hemg vs pmram: 969 near pairs, 53.8% of pmram matched
+    hemg vs sartaj: 3520 near pairs, 76.2% of sartaj matched
+    pmram vs sartaj: 467 near pairs, 14.4% of sartaj matched
+  wrote results/E0_audit.json
+[audit] done in 1.3 min
+
